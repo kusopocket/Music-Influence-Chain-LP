@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Influence Chain</title>
+  <meta name="description" content="アーティスト同士の影響の連鎖をたどる音楽クイズアプリ。Wikipedia をもとに、好きな一枚から音楽史の源流へ。 / A music quiz tracing the chain of influence between artists." />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+</head>
+<body data-title-ja="Music Influence Chain — 音楽のルーツをたどる" data-title-en="Music Influence Chain — Trace the roots of music">
+  <div class="bg-ambient"></div>
+  <div class="bg-grain"></div>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/img/logo.png" alt="Music Influence Chain" />
+        <span class="brand-name"><b>Music</b><br />Influence Chain</span>
+      </a>
+      <nav class="nav">
+        <a href="#about"><span class="lang-ja">アプリについて</span><span class="lang-en">About</span></a>
+        <a href="#modes"><span class="lang-ja">モード</span><span class="lang-en">Modes</span></a>
+        <a href="#how"><span class="lang-ja">遊び方</span><span class="lang-en">How it works</span></a>
+        <a href="#faq"><span class="lang-ja">FAQ</span><span class="lang-en">FAQ</span></a>
+        <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener"><span class="lang-ja">お問い合わせ</span><span class="lang-en">Contact</span></a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button data-lang="ja" type="button">日本語</button>
+        <button data-lang="en" type="button">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy reveal">
+        <img class="hero-emblem" src="assets/img/logo.png" alt="" />
+        <h1><span class="m1">Music</span><span class="m2">Influence Chain</span></h1>
+        <p class="tagline">
+          <span class="lang-ja">レコード棚から音楽のルーツをたどる</span>
+          <span class="lang-en">Trace the roots of music, one record at a time</span>
+        </p>
+        <p class="sub">
+          <span class="lang-ja">アーティスト同士の「影響の連鎖」をたどる音楽クイズ。Wikipedia をもとに、好きな一枚から音楽史の源流へさかのぼります。</span>
+          <span class="lang-en">A music quiz that follows the chain of influence between artists. Powered by Wikipedia, it lets you start from a record you love and travel back to the source of music history.</span>
+        </p>
+        <div class="hero-cta">
+          <span class="coming-soon">
+            <span class="dot"></span>
+            <span class="lang-ja">iOS版 近日公開</span>
+            <span class="lang-en">Coming soon on iOS</span>
+          </span>
+          <a class="btn btn-ghost" href="#about">
+            <span class="lang-ja">アプリの特徴を見る</span>
+            <span class="lang-en">See what it does</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-art reveal">
+        <div class="phone phone-float">
+          <img src="assets/img/screen-home.png" alt="Music Influence Chain home screen" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ About ============ -->
+  <section id="about" class="section-alt">
+    <div class="wrap about-grid">
+      <p class="lead reveal">
+        <span class="lang-ja">音楽は、つながっている。</span>
+        <span class="lang-en">All music is connected.</span>
+      </p>
+      <div class="body reveal">
+        <p>
+          <span class="lang-ja">あなたの好きなアーティストには、影響を受けた誰かがいて、その誰かにもまた源流がある。<strong>Music Influence Chain</strong> は、その「影響の連鎖」をたどっていく音楽クイズアプリです。</span>
+          <span class="lang-en">Every artist you love was shaped by someone before them — and that someone had roots too. <strong>Music Influence Chain</strong> is a music quiz app for tracing those chains of influence, link by link.</span>
+        </p>
+        <p>
+          <span class="lang-ja">出題は Wikipedia / Wikimedia Commons の記述をもとに構成。クイズを解きながら、ジャンルや時代を越えてアーティストがどうつながっているのかが自然と見えてきます。</span>
+          <span class="lang-en">Questions are built from descriptions on Wikipedia and Wikimedia Commons. As you play, you start to see how artists connect across genres and eras — naturally, without studying.</span>
+        </p>
+        <p>
+          <span class="lang-ja">温かなローズウッドの世界観と、回るレコードの手触り。気軽に遊べて、音楽の聴き方が少し変わる。そんな一本です。</span>
+          <span class="lang-en">Wrapped in a warm rosewood world and the tactile feel of a spinning record, it's easy to pick up — and it just might change how you listen to music.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Modes ============ -->
+  <section id="modes">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>
+          <span class="lang-ja">3つの遊び方</span>
+          <span class="lang-en">Three ways to play</span>
+        </h2>
+        <p>
+          <span class="lang-ja">気分に合わせて、ルーツのたどり方を選べます。</span>
+          <span class="lang-en">Pick how you want to trace the roots, depending on your mood.</span>
+        </p>
+      </div>
+      <div class="modes">
+        <div class="mode-card reveal">
+          <div class="mode-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 4.5 1.5c0 1.5-2 2-2 3"/><line x1="12" y1="16.5" x2="12" y2="16.6"/></svg>
+          </div>
+          <span class="tag">Quiz Mode</span>
+          <h3>
+            <span class="lang-ja">クイズモード</span>
+            <span class="lang-en">Quiz Mode</span>
+          </h3>
+          <p>
+            <span class="lang-ja">出題範囲を選んでプレイ。制限時間とライフのなかで、アーティストのルーツを当てていきます。</span>
+            <span class="lang-en">Choose a category and play. Race against the clock and your lives to guess each artist's roots.</span>
+          </p>
+        </div>
+        <div class="mode-card reveal">
+          <div class="mode-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="7" x2="20" y2="7"/><circle cx="9" cy="7" r="2.2" fill="currentColor" stroke="none"/><line x1="4" y1="17" x2="20" y2="17"/><circle cx="15" cy="17" r="2.2" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <span class="tag">Custom Route</span>
+          <h3>
+            <span class="lang-ja">カスタムルート</span>
+            <span class="lang-en">Custom Route</span>
+          </h3>
+          <p>
+            <span class="lang-ja">自分だけの音楽ルーツクイズを作成。好きなアーティストを起点に、オリジナルの連鎖を組み立てられます。</span>
+            <span class="lang-en">Build your own music-roots quiz. Start from any artist you like and assemble your own chain of influence.</span>
+          </p>
+        </div>
+        <div class="mode-card reveal">
+          <div class="mode-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5h3v14H5z"/><path d="M9.5 5h3v14h-3z"/><path d="M14.5 5.8l3 .6 2.2 13.4-3-.6z"/></svg>
+          </div>
+          <span class="tag">Roots Library</span>
+          <h3>
+            <span class="lang-ja">ルーツライブラリ</span>
+            <span class="lang-en">Roots Library</span>
+          </h3>
+          <p>
+            <span class="lang-ja">好きなアーティストのルーツを学ぶ。影響の樹形図（Influence Tree）で、つながりをじっくり眺められます。</span>
+            <span class="lang-en">Study the roots of your favourite artists. Explore the connections at your own pace with the Influence Tree.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ How it works ============ -->
+  <section id="how" class="section-alt">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2>
+          <span class="lang-ja">遊び方はかんたん</span>
+          <span class="lang-en">How it works</span>
+        </h2>
+        <p>
+          <span class="lang-ja">STARTを押して、レコードに針を落とすだけ。</span>
+          <span class="lang-en">Hit START and drop the needle — that's it.</span>
+        </p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="num">STEP 01</span>
+          <h3>
+            <span class="lang-ja">アーティストが流れる</span>
+            <span class="lang-en">An artist appears</span>
+          </h3>
+          <p>
+            <span class="lang-ja">いま「再生中」のアーティストが表示されます。次にたどるべきルーツはどれ？</span>
+            <span class="lang-en">The artist that's "now playing" is shown. Which one are their roots?</span>
+          </p>
+        </div>
+        <div class="step reveal">
+          <span class="num">STEP 02</span>
+          <h3>
+            <span class="lang-ja">ルーツを選ぶ</span>
+            <span class="lang-en">Choose the root</span>
+          </h3>
+          <p>
+            <span class="lang-ja">4つの候補から、影響を与えたアーティストを選択。Tips がそっと背中を押します。</span>
+            <span class="lang-en">Pick the artist who influenced them from four candidates. Tips give you a gentle nudge.</span>
+          </p>
+        </div>
+        <div class="step reveal">
+          <span class="num">STEP 03</span>
+          <h3>
+            <span class="lang-ja">連鎖がのびていく</span>
+            <span class="lang-en">The chain grows</span>
+          </h3>
+          <p>
+            <span class="lang-ja">正解するほど影響の連鎖が長くのびる。スコアとコンボを重ねて源流をめざそう。</span>
+            <span class="lang-en">Each correct answer extends the chain. Stack up score and combos as you reach for the source.</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Screenshots ============ -->
+  <section id="screens">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center;">
+        <h2>
+          <span class="lang-ja">画面を見る</span>
+          <span class="lang-en">A look inside</span>
+        </h2>
+      </div>
+      <div class="shots">
+        <figure class="reveal">
+          <div class="phone"><img src="assets/img/screen-home.png" alt="Home screen" /></div>
+          <figcaption>
+            <b>HOME</b>
+            <span class="lang-ja">レコードに針を落としてスタート</span>
+            <span class="lang-en">Drop the needle to start</span>
+          </figcaption>
+        </figure>
+        <figure class="reveal">
+          <div class="phone"><img src="assets/img/screen-quiz.png" alt="Quiz screen" /></div>
+          <figcaption>
+            <b>QUIZ</b>
+            <span class="lang-ja">4択でルーツを当てる</span>
+            <span class="lang-en">Guess the roots from four choices</span>
+          </figcaption>
+        </figure>
+        <figure class="reveal">
+          <div class="phone"><img src="assets/img/screen-roots.png" alt="Artist roots screen" /></div>
+          <figcaption>
+            <b>ROOTS</b>
+            <span class="lang-ja">影響の樹形図でつながりを知る</span>
+            <span class="lang-en">See connections in the Influence Tree</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="section-alt">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center;">
+        <h2>
+          <span class="lang-ja">よくある質問</span>
+          <span class="lang-en">Frequently asked questions</span>
+        </h2>
+      </div>
+      <div class="faq reveal">
+        <details>
+          <summary>
+            <span class="lang-ja">料金はかかりますか？</span>
+            <span class="lang-en">Is the app free?</span>
+          </summary>
+          <div class="ans">
+            <span class="lang-ja">基本プレイは無料です。すべてのモードを気軽にお楽しみいただけます。</span>
+            <span class="lang-en">Core gameplay is free, and all modes are available to enjoy right away.</span>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="lang-ja">クイズのデータはどこから来ていますか？</span>
+            <span class="lang-en">Where does the quiz data come from?</span>
+          </summary>
+          <div class="ans">
+            <span class="lang-ja">アーティスト情報や画像は Wikipedia / Wikimedia Commons の記述をもとに構成しています。影響関係も Wikipedia の記述を確認元として参考にしています。</span>
+            <span class="lang-en">Artist information and images are based on Wikipedia and Wikimedia Commons. Influence relationships also reference descriptions on Wikipedia as their source.</span>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="lang-ja">言語は切り替えられますか？</span>
+            <span class="lang-en">Can I change the language?</span>
+          </summary>
+          <div class="ans">
+            <span class="lang-ja">はい。アプリの設定画面、およびこのサイト右上の切り替えから日本語・英語を選べます。</span>
+            <span class="lang-en">Yes. You can switch between Japanese and English from the app's settings screen, and from the toggle at the top right of this site.</span>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="lang-ja">音楽が再生されるアプリですか？</span>
+            <span class="lang-en">Does the app play music?</span>
+          </summary>
+          <div class="ans">
+            <span class="lang-ja">楽曲そのものを再生するアプリではありません。アーティスト同士の影響関係を「クイズ」として楽しむアプリです。</span>
+            <span class="lang-en">It doesn't stream songs themselves. It's a game for enjoying the influence relationships between artists as a quiz.</span>
+          </div>
+        </details>
+        <details>
+          <summary>
+            <span class="lang-ja">不具合の報告や要望はどこへ？</span>
+            <span class="lang-en">How do I report a bug or request a feature?</span>
+          </summary>
+          <div class="ans">
+            <span class="lang-ja">下記のお問い合わせフォームよりお気軽にお寄せください。<a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">お問い合わせフォームを開く</a></span>
+            <span class="lang-en">Please send anything via our contact form. <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">Open the contact form</a></span>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA band ============ -->
+  <section class="cta-band">
+    <div class="wrap reveal">
+      <h2>
+        <span class="lang-ja">ご意見・お問い合わせ</span>
+        <span class="lang-en">Questions or feedback?</span>
+      </h2>
+      <p>
+        <span class="lang-ja">アプリへのご感想、不具合のご報告、収録してほしいアーティストのリクエストなど、お気軽にお寄せください。</span>
+        <span class="lang-en">We'd love to hear your impressions, bug reports, or requests for artists you'd like to see added.</span>
+      </p>
+      <a class="btn btn-primary" href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+        <span class="lang-ja">お問い合わせフォームへ</span>
+        <span class="lang-en">Open the contact form</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/logo.png" alt="" />
+          <div>
+            <div class="ft-name">Music Influence Chain</div>
+            <p class="ft-desc">
+              <span class="lang-ja">レコード棚から音楽のルーツをたどる、影響の連鎖の音楽クイズ。</span>
+              <span class="lang-en">A music quiz tracing the chain of influence, from the record shelf to the roots.</span>
+            </p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4><span class="lang-ja">メニュー</span><span class="lang-en">Explore</span></h4>
+          <a href="#about"><span class="lang-ja">アプリについて</span><span class="lang-en">About</span></a>
+          <a href="#modes"><span class="lang-ja">モード</span><span class="lang-en">Modes</span></a>
+          <a href="#how"><span class="lang-ja">遊び方</span><span class="lang-en">How it works</span></a>
+          <a href="#faq"><span class="lang-ja">FAQ</span><span class="lang-en">FAQ</span></a>
+        </div>
+        <div class="footer-col">
+          <h4><span class="lang-ja">サポート・規約</span><span class="lang-en">Support &amp; Legal</span></h4>
+          <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener"><span class="lang-ja">お問い合わせ</span><span class="lang-en">Contact</span></a>
+          <a href="terms.html"><span class="lang-ja">利用規約</span><span class="lang-en">Terms of Service</span></a>
+          <a href="privacy.html"><span class="lang-ja">プライバシーポリシー</span><span class="lang-en">Privacy Policy</span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Music Influence Chain</span>
+        <span>
+          <span class="lang-ja">画像・データは Wikipedia / Wikimedia Commons より取得</span>
+          <span class="lang-en">Images &amp; data sourced from Wikipedia / Wikimedia Commons</span>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js?v=2"></script>
+</body>
+</html>
