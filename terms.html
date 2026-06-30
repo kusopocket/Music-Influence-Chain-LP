@@ -8,12 +8,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <link rel="stylesheet" href="assets/css/style.css?v=3" />
 </head>
-<body data-title-ja="利用規約 — Music Influence Chain" data-title-en="Terms of Service — Music Influence Chain">
+<body
+  data-title-ja="利用規約 — Music Influence Chain"
+  data-title-en="Terms of Service — Music Influence Chain"
+  data-title-zh-Hans="使用条款 — Music Influence Chain"
+  data-title-zh-Hant="使用條款 — Music Influence Chain"
+  data-title-ko="이용약관 — Music Influence Chain"
+  data-title-es="Términos de Servicio — Music Influence Chain"
+>
   <div class="bg-ambient"></div>
   <div class="bg-grain"></div>
 
+  <!-- ============ Header ============ -->
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="index.html">
@@ -21,14 +29,51 @@
         <span class="brand-name"><b>Music</b><br />Influence Chain</span>
       </a>
       <nav class="nav">
-        <a href="index.html#about"><span class="lang-ja">アプリについて</span><span class="lang-en">About</span></a>
-        <a href="index.html#faq"><span class="lang-ja">FAQ</span><span class="lang-en">FAQ</span></a>
-        <a href="privacy.html"><span class="lang-ja">プライバシー</span><span class="lang-en">Privacy</span></a>
-        <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener"><span class="lang-ja">お問い合わせ</span><span class="lang-en">Contact</span></a>
+        <a href="index.html#about">
+          <span class="lang-ja">アプリについて</span>
+          <span class="lang-en">About</span>
+          <span class="lang-zh-Hans">关于应用</span>
+          <span class="lang-zh-Hant">關於應用</span>
+          <span class="lang-ko">앱 소개</span>
+          <span class="lang-es">Acerca de</span>
+        </a>
+        <a href="index.html#faq">
+          <span class="lang-ja">FAQ</span>
+          <span class="lang-en">FAQ</span>
+          <span class="lang-zh-Hans">FAQ</span>
+          <span class="lang-zh-Hant">FAQ</span>
+          <span class="lang-ko">FAQ</span>
+          <span class="lang-es">FAQ</span>
+        </a>
+        <a href="privacy.html">
+          <span class="lang-ja">プライバシー</span>
+          <span class="lang-en">Privacy</span>
+          <span class="lang-zh-Hans">隐私政策</span>
+          <span class="lang-zh-Hant">隱私權政策</span>
+          <span class="lang-ko">개인정보처리방침</span>
+          <span class="lang-es">Privacidad</span>
+        </a>
+        <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">
+          <span class="lang-ja">お問い合わせ</span>
+          <span class="lang-en">Contact</span>
+          <span class="lang-zh-Hans">联系我们</span>
+          <span class="lang-zh-Hant">聯絡我們</span>
+          <span class="lang-ko">문의</span>
+          <span class="lang-es">Contacto</span>
+        </a>
       </nav>
       <div class="lang-switch" role="group" aria-label="Language">
-        <button data-lang="ja" type="button">日本語</button>
-        <button data-lang="en" type="button">EN</button>
+        <button class="lang-toggle" type="button">
+          <span class="lang-current">日本語</span>
+        </button>
+        <div class="lang-dropdown">
+          <button data-lang="ja" type="button">日本語</button>
+          <button data-lang="en" type="button">English</button>
+          <button data-lang="zh-Hans" type="button">简体中文</button>
+          <button data-lang="zh-Hant" type="button">繁體中文</button>
+          <button data-lang="ko" type="button">한국어</button>
+          <button data-lang="es" type="button">Español</button>
+        </div>
       </div>
     </div>
   </header>
@@ -37,112 +82,415 @@
     <div class="wrap">
       <a class="back" href="index.html">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-        <span class="lang-ja">トップに戻る</span><span class="lang-en">Back to home</span>
+        <span class="lang-ja">トップに戻る</span>
+        <span class="lang-en">Back to home</span>
+        <span class="lang-zh-Hans">返回首页</span>
+        <span class="lang-zh-Hant">返回首頁</span>
+        <span class="lang-ko">홈으로 돌아가기</span>
+        <span class="lang-es">Volver al inicio</span>
       </a>
 
       <!-- ===== Japanese ===== -->
       <div class="lang-ja">
         <h1>利用規約</h1>
-        <p class="updated">最終更新日：2026年5月29日</p>
+        <p class="updated">最終更新日：2026年6月30日</p>
 
         <p>本利用規約（以下「本規約」）は、Music Influence Chain（以下「本アプリ」）の提供条件および本アプリの利用に関する運営者と利用者との間の権利義務関係を定めるものです。本アプリをご利用いただく前に、本規約をよくお読みください。本アプリをダウンロード・利用された時点で、本規約に同意したものとみなされます。</p>
 
-        <h2>第1条（適用）</h2>
-        <p>本規約は、本アプリの利用に関わる一切の関係に適用されます。運営者がアプリ内またはウェブサイト上で掲示する個別の規定・ガイドラインも、本規約の一部を構成します。</p>
+        <h2>1. 適用範囲</h2>
+        <p>本規約は、本アプリ「Music Influence Chain」の利用に関わる一切の関係に適用されます。運営者がアプリ内またはウェブサイト上で掲示する個別の規定・ガイドラインも、本規約の一部を構成します。</p>
 
-        <h2>第2条（利用料金）</h2>
-        <p>本アプリの基本機能は無料でご利用いただけます。将来的に有料機能を追加する場合は、事前にアプリ内で明示します。</p>
+        <h2>2. 料金・課金</h2>
+        <ul>
+          <li>75アーティストのコアコンテンツは無料でご利用いただけます。</li>
+          <li>本編アンロック（¥600）：本編アーティスト計820以上にアクセスできます。</li>
+          <li>DLCパック：テーマ別の追加アーティストパックを個別に購入できます（現在「J-Rock &amp; Pop Pack vol.1」を¥400で配信中）。</li>
+          <li>アプリ内課金はすべて Apple の App Store を通じて処理されます。</li>
+          <li>返金については、Apple の返金ポリシーに従って対応します。</li>
+        </ul>
 
-        <h2>第3条（禁止事項）</h2>
+        <h2>3. 禁止事項</h2>
         <p>利用者は、本アプリの利用にあたり、以下の行為をしてはなりません。</p>
         <ul>
           <li>法令または公序良俗に違反する行為</li>
-          <li>本アプリの運営を妨害する行為、または不正アクセス・解析・改変を試みる行為</li>
-          <li>運営者または第三者の知的財産権・プライバシーその他の権利を侵害する行為</li>
-          <li>本アプリを商用目的で無断利用・再配布する行為</li>
+          <li>本アプリのリバースエンジニアリング、不正なデータ抽出、解析・改変を試みる行為</li>
+          <li>運営者の許可なく本アプリのコンテンツを商用目的で利用する行為</li>
+          <li>著作物の無断配布、その他第三者の権利を侵害する行為</li>
         </ul>
 
-        <h2>第4条（コンテンツと出典）</h2>
-        <p>本アプリで表示されるアーティスト情報、画像、影響関係などのデータは、Wikipedia および Wikimedia Commons の記述をもとに構成しています。これらのコンテンツの正確性・完全性・最新性について、運営者はいかなる保証も行いません。各コンテンツの権利は、それぞれの権利者またはライセンス（クリエイティブ・コモンズ等）に帰属します。</p>
+        <h2>4. コンテンツ・データソース</h2>
+        <p>本アプリで表示されるアーティスト情報・画像は、Wikipedia および Wikimedia Commons から取得しています。影響関係についても、Wikipedia の記述を参照して構成しています。これらのデータの正確性・完全性・最新性について、運営者はいかなる保証も行いません。画像は、それぞれに適用されるクリエイティブ・コモンズ・ライセンスまたはパブリックドメインのもとで使用しています。</p>
 
-        <h2>第5条（知的財産権）</h2>
-        <p>本アプリ自体（プログラム、デザイン、ロゴ、ゲーム性等）に関する知的財産権は運営者に帰属します。第三者コンテンツを除き、運営者の許可なく複製・転載することを禁じます。</p>
+        <h2>5. 知的財産</h2>
+        <p>本アプリのデザイン、コード、オリジナルコンテンツに関する知的財産権は、開発者に帰属します。Wikipedia / Wikimedia のコンテンツは、それぞれのライセンスのもとで使用しています。アーティスト名および関連する商標は、それぞれの権利者に帰属します。</p>
 
-        <h2>第6条（免責事項）</h2>
-        <ul>
-          <li>運営者は、本アプリが利用者の特定の目的に適合すること、期待する機能・正確性を有することを保証しません。</li>
-          <li>本アプリの利用または利用不能から生じた損害について、運営者は法令で許容される範囲で責任を負いません。</li>
-          <li>本アプリは予告なく、内容の変更・中断・終了を行う場合があります。</li>
-        </ul>
+        <h2>6. 免責事項</h2>
+        <p>本アプリは「現状のまま」提供され、いかなる保証も行いません。本アプリの利用により生じた損害について、運営者は責任を負いません。</p>
 
-        <h2>第7条（規約の変更）</h2>
-        <p>運営者は、必要と判断した場合、利用者に通知することなく本規約を変更できるものとします。変更後の本規約は、本アプリまたは本サイトに掲示された時点から効力を生じます。</p>
+        <h2>7. 変更について</h2>
+        <p>運営者は、必要と判断した場合、いつでも本規約を変更できるものとします。変更内容は本ページに掲示します。</p>
 
-        <h2>第8条（準拠法・お問い合わせ）</h2>
-        <p>本規約の解釈にあたっては、日本法を準拠法とします。本規約に関するお問い合わせは、<a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">お問い合わせフォーム</a>よりご連絡ください。</p>
+        <h2>8. 準拠法</h2>
+        <p>本規約の解釈にあたっては、日本法を準拠法とします。</p>
 
-        <div class="note">本ページは一般的なひな形です。実際の公開にあたっては、運営者名・連絡先など、実情に合わせて内容をご確認・修正のうえご利用ください。</div>
+        <h2>9. お問い合わせ</h2>
+        <p>本規約に関するお問い合わせは、<a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">お問い合わせフォーム</a>よりご連絡ください。</p>
       </div>
 
       <!-- ===== English ===== -->
       <div class="lang-en">
         <h1>Terms of Service</h1>
-        <p class="updated">Last updated: May 29, 2026</p>
+        <p class="updated">Last updated: June 30, 2026</p>
 
         <p>These Terms of Service ("Terms") govern the conditions under which Music Influence Chain (the "App") is provided, and the rights and obligations between the operator and users regarding the use of the App. Please read these Terms carefully before using the App. By downloading or using the App, you are deemed to have agreed to these Terms.</p>
 
         <h2>1. Scope</h2>
-        <p>These Terms apply to all matters relating to the use of the App. Any individual rules or guidelines posted by the operator within the App or on its website also form part of these Terms.</p>
+        <p>These Terms govern your use of the "Music Influence Chain" iOS application. Any individual rules or guidelines posted by the operator within the App or on its website also form part of these Terms.</p>
 
-        <h2>2. Fees</h2>
-        <p>The core features of the App are available free of charge. Should paid features be added in the future, this will be clearly stated in advance within the App.</p>
+        <h2>2. Pricing</h2>
+        <ul>
+          <li>Core content (75 artists) is available for free.</li>
+          <li>Full Game Unlock (¥600): Access to 820+ main artists.</li>
+          <li>DLC Packs: Additional themed artist packs are available for separate purchase (currently the "J-Rock &amp; Pop Pack vol.1" at ¥400).</li>
+          <li>All in-app purchases are processed through Apple's App Store.</li>
+          <li>Refunds are handled according to Apple's refund policy.</li>
+        </ul>
 
         <h2>3. Prohibited Conduct</h2>
         <p>When using the App, users must not:</p>
         <ul>
           <li>violate laws, regulations, or public order and morals;</li>
-          <li>interfere with the operation of the App, or attempt unauthorized access, analysis, or modification;</li>
-          <li>infringe the intellectual property, privacy, or other rights of the operator or any third party;</li>
-          <li>use or redistribute the App for commercial purposes without permission.</li>
+          <li>reverse engineer the App, attempt unauthorized data extraction, or analyze or modify the App;</li>
+          <li>use App content for commercial purposes without the operator's permission;</li>
+          <li>distribute copyrighted materials without authorization, or otherwise infringe the rights of third parties.</li>
         </ul>
 
-        <h2>4. Content and Sources</h2>
-        <p>Artist information, images, influence relationships, and other data shown in the App are based on descriptions from Wikipedia and Wikimedia Commons. The operator makes no warranty as to the accuracy, completeness, or timeliness of such content. Rights to each piece of content belong to their respective rights holders or licenses (such as Creative Commons).</p>
+        <h2>4. Content &amp; Data Sources</h2>
+        <p>Artist information and images shown in the App are sourced from Wikipedia and Wikimedia Commons. Influence relationships shown in the App reference descriptions from Wikipedia. The operator makes no warranty as to the accuracy, completeness, or currency of this data. Images are used under their applicable Creative Commons licenses or as public domain works.</p>
 
         <h2>5. Intellectual Property</h2>
-        <p>Intellectual property rights in the App itself (its program, design, logo, gameplay, etc.) belong to the operator. Except for third-party content, reproduction or reposting without the operator's permission is prohibited.</p>
+        <p>The App's design, code, and original content are the property of the developer. Wikipedia and Wikimedia content is used under their respective licenses. Artist names and related trademarks belong to their respective owners.</p>
 
         <h2>6. Disclaimer</h2>
-        <ul>
-          <li>The operator does not warrant that the App is fit for any particular purpose, or that it has the features or accuracy you expect.</li>
-          <li>To the extent permitted by law, the operator is not liable for any damages arising from the use of, or inability to use, the App.</li>
-          <li>The App's content may be changed, suspended, or discontinued without prior notice.</li>
-        </ul>
+        <p>The App is provided "as is" without warranties of any kind. The operator is not liable for any damages arising from the use of this App.</p>
 
         <h2>7. Changes to These Terms</h2>
-        <p>The operator may revise these Terms without notice when deemed necessary. The revised Terms take effect once posted within the App or on this site.</p>
+        <p>The operator reserves the right to modify these Terms at any time. Changes will be posted on this page.</p>
 
-        <h2>8. Governing Law &amp; Contact</h2>
-        <p>These Terms shall be interpreted in accordance with the laws of Japan. For inquiries regarding these Terms, please use the <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">contact form</a>.</p>
+        <h2>8. Governing Law</h2>
+        <p>These Terms are governed by the laws of Japan.</p>
 
-        <div class="note">This page is a general template. Before publishing, please review and adjust the details — such as the operator's name and contact information — to match your actual circumstances.</div>
+        <h2>9. Contact</h2>
+        <p>For questions about these Terms, please use the <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">contact form</a>.</p>
+      </div>
+
+      <!-- ===== Simplified Chinese ===== -->
+      <div class="lang-zh-Hans">
+        <h1>使用条款</h1>
+        <p class="updated">最后更新日期：2026年6月30日</p>
+
+        <p>本使用条款（以下简称"本条款"）规定了 Music Influence Chain（以下简称"本应用"）的提供条件，以及运营者与用户之间关于使用本应用的权利义务关系。请在使用本应用之前仔细阅读本条款。下载或使用本应用即视为您已同意本条款。</p>
+
+        <h2>1. 适用范围</h2>
+        <p>本条款适用于您对"Music Influence Chain"iOS 应用程序的所有使用行为。运营者在应用内或网站上发布的任何个别规定或指南也构成本条款的一部分。</p>
+
+        <h2>2. 价格与计费</h2>
+        <ul>
+          <li>核心内容（75位艺术家）可免费使用。</li>
+          <li>本篇解锁（¥600）：可访问820位以上的主线艺术家。</li>
+          <li>DLC包：可单独购买额外的主题艺术家包（目前提供「J-Rock &amp; Pop Pack vol.1」，售价¥400）。</li>
+          <li>所有应用内购买均通过 Apple 的 App Store 处理。</li>
+          <li>退款将按照 Apple 的退款政策处理。</li>
+        </ul>
+
+        <h2>3. 禁止行为</h2>
+        <p>用户在使用本应用时，禁止进行以下行为：</p>
+        <ul>
+          <li>违反法律法规或公共秩序与道德的行为；</li>
+          <li>对本应用进行逆向工程、未经授权的数据提取，或试图分析、修改本应用；</li>
+          <li>未经运营者许可，将本应用内容用于商业目的；</li>
+          <li>未经授权分发受版权保护的材料，或其他侵犯第三方权利的行为。</li>
+        </ul>
+
+        <h2>4. 内容与数据来源</h2>
+        <p>本应用中显示的艺术家信息和图片均来自 Wikipedia 和 Wikimedia Commons。应用中显示的影响关系参考了 Wikipedia 的描述。运营者不对这些数据的准确性、完整性或时效性作任何保证。图片的使用遵循其各自适用的知识共享许可协议或公共领域规定。</p>
+
+        <h2>5. 知识产权</h2>
+        <p>本应用的设计、代码及原创内容的知识产权归开发者所有。Wikipedia 和 Wikimedia 的内容依据其各自的许可协议使用。艺术家姓名及相关商标归其各自权利人所有。</p>
+
+        <h2>6. 免责声明</h2>
+        <p>本应用按"现状"提供，不附带任何形式的保证。运营者不对因使用本应用而产生的任何损害承担责任。</p>
+
+        <h2>7. 条款的变更</h2>
+        <p>运营者保留随时修改本条款的权利。变更内容将公布在本页面上。</p>
+
+        <h2>8. 适用法律</h2>
+        <p>本条款适用日本法律。</p>
+
+        <h2>9. 联系我们</h2>
+        <p>如对本条款有任何疑问，请通过<a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">联系表单</a>与我们联系。</p>
+      </div>
+
+      <!-- ===== Traditional Chinese ===== -->
+      <div class="lang-zh-Hant">
+        <h1>使用條款</h1>
+        <p class="updated">最後更新日期：2026年6月30日</p>
+
+        <p>本使用條款（以下簡稱「本條款」）規定了 Music Influence Chain（以下簡稱「本應用」）的提供條件，以及運營者與用戶之間關於使用本應用的權利義務關係。請在使用本應用之前仔細閱讀本條款。下載或使用本應用即視為您已同意本條款。</p>
+
+        <h2>1. 適用範圍</h2>
+        <p>本條款適用於您對「Music Influence Chain」iOS 應用程式的所有使用行為。運營者在應用內或網站上發布的任何個別規定或指南也構成本條款的一部分。</p>
+
+        <h2>2. 價格與計費</h2>
+        <ul>
+          <li>核心內容（75位藝術家）可免費使用。</li>
+          <li>本篇解鎖（¥600）：可存取820位以上的主線藝術家。</li>
+          <li>DLC包：可單獨購買額外的主題藝術家包（目前提供「J-Rock &amp; Pop Pack vol.1」，售價¥400）。</li>
+          <li>所有應用內購買均透過 Apple 的 App Store 處理。</li>
+          <li>退款將依照 Apple 的退款政策處理。</li>
+        </ul>
+
+        <h2>3. 禁止行為</h2>
+        <p>用戶在使用本應用時，禁止進行以下行為：</p>
+        <ul>
+          <li>違反法律法規或公共秩序與道德的行為；</li>
+          <li>對本應用進行逆向工程、未經授權的資料擷取，或試圖分析、修改本應用；</li>
+          <li>未經運營者許可，將本應用內容用於商業目的；</li>
+          <li>未經授權散布受版權保護的材料，或其他侵犯第三方權利的行為。</li>
+        </ul>
+
+        <h2>4. 內容與資料來源</h2>
+        <p>本應用中顯示的藝術家資訊和圖片均來自 Wikipedia 和 Wikimedia Commons。應用中顯示的影響關係參考了 Wikipedia 的描述。運營者不對這些資料的準確性、完整性或時效性作任何保證。圖片的使用遵循其各自適用的創用CC授權條款或公共領域規定。</p>
+
+        <h2>5. 智慧財產權</h2>
+        <p>本應用的設計、程式碼及原創內容的智慧財產權歸開發者所有。Wikipedia 和 Wikimedia 的內容依據其各自的授權條款使用。藝術家姓名及相關商標歸其各自權利人所有。</p>
+
+        <h2>6. 免責聲明</h2>
+        <p>本應用按「現狀」提供，不附帶任何形式的保證。運營者不對因使用本應用而產生的任何損害承擔責任。</p>
+
+        <h2>7. 條款的變更</h2>
+        <p>運營者保留隨時修改本條款的權利。變更內容將公布在本頁面上。</p>
+
+        <h2>8. 適用法律</h2>
+        <p>本條款適用日本法律。</p>
+
+        <h2>9. 聯絡我們</h2>
+        <p>如對本條款有任何疑問，請透過<a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">聯絡表單</a>與我們聯繫。</p>
+      </div>
+
+      <!-- ===== Korean ===== -->
+      <div class="lang-ko">
+        <h1>이용약관</h1>
+        <p class="updated">최종 업데이트: 2026년 6월 30일</p>
+
+        <p>본 이용약관(이하 "본 약관")은 Music Influence Chain(이하 "본 앱")의 제공 조건 및 본 앱 이용에 관한 운영자와 이용자 간의 권리·의무 관계를 정합니다. 본 앱을 이용하기 전에 본 약관을 잘 읽어 주십시오. 본 앱을 다운로드하거나 이용하는 시점에 본 약관에 동의한 것으로 간주됩니다.</p>
+
+        <h2>1. 적용 범위</h2>
+        <p>본 약관은 "Music Influence Chain" iOS 애플리케이션의 이용에 관한 모든 사항에 적용됩니다. 운영자가 앱 내 또는 웹사이트에 게시하는 개별 규정이나 가이드라인도 본 약관의 일부를 구성합니다.</p>
+
+        <h2>2. 요금・결제</h2>
+        <ul>
+          <li>코어 콘텐츠(아티스트 75명)는 무료로 이용할 수 있습니다.</li>
+          <li>본편 잠금 해제（¥600）：820명 이상의 메인 아티스트에 접근할 수 있습니다.</li>
+          <li>DLC 팩：테마별 추가 아티스트 팩을 개별 구매할 수 있습니다（현재「J-Rock &amp; Pop Pack vol.1」을 ¥400에 제공 중）。</li>
+          <li>모든 앱 내 구매는 Apple App Store를 통해 처리됩니다.</li>
+          <li>환불은 Apple의 환불 정책에 따라 처리됩니다.</li>
+        </ul>
+
+        <h2>3. 금지 행위</h2>
+        <p>이용자는 본 앱을 이용함에 있어 다음 행위를 해서는 안 됩니다.</p>
+        <ul>
+          <li>법령 또는 공공질서 및 미풍양속에 반하는 행위</li>
+          <li>본 앱에 대한 리버스 엔지니어링, 무단 데이터 추출, 분석·수정을 시도하는 행위</li>
+          <li>운영자의 허가 없이 본 앱의 콘텐츠를 상업적 목적으로 이용하는 행위</li>
+          <li>저작물의 무단 배포, 그 외 제3자의 권리를 침해하는 행위</li>
+        </ul>
+
+        <h2>4. 콘텐츠・데이터 출처</h2>
+        <p>본 앱에 표시되는 아티스트 정보 및 이미지는 Wikipedia 및 Wikimedia Commons에서 제공받고 있습니다. 영향 관계 역시 Wikipedia의 기술을 참조하여 구성하였습니다. 운영자는 이러한 데이터의 정확성, 완전성, 최신성에 대해 어떠한 보증도 하지 않습니다. 이미지는 각각 적용되는 크리에이티브 커먼즈 라이선스 또는 퍼블릭 도메인 하에 사용됩니다.</p>
+
+        <h2>5. 지적재산권</h2>
+        <p>본 앱의 디자인, 코드 및 오리지널 콘텐츠에 관한 지적재산권은 개발자에게 귀속됩니다. Wikipedia/Wikimedia의 콘텐츠는 각각의 라이선스에 따라 사용됩니다. 아티스트명 및 관련 상표는 각 권리자에게 귀속됩니다.</p>
+
+        <h2>6. 면책 사항</h2>
+        <p>본 앱은 "있는 그대로" 제공되며 어떠한 보증도 하지 않습니다. 운영자는 본 앱의 이용으로 인해 발생한 손해에 대해 책임을 지지 않습니다.</p>
+
+        <h2>7. 약관 변경</h2>
+        <p>운영자는 필요하다고 판단되는 경우 언제든지 본 약관을 변경할 수 있습니다. 변경 사항은 본 페이지에 게시됩니다.</p>
+
+        <h2>8. 준거법</h2>
+        <p>본 약관의 해석에는 일본법을 준거법으로 합니다.</p>
+
+        <h2>9. 문의</h2>
+        <p>본 약관에 관한 문의는 <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">문의 양식</a>을 통해 연락해 주십시오.</p>
+      </div>
+
+      <!-- ===== Spanish ===== -->
+      <div class="lang-es">
+        <h1>Términos de Servicio</h1>
+        <p class="updated">Última actualización: 30 de junio de 2026</p>
+
+        <p>Estos Términos de Servicio (los "Términos") regulan las condiciones bajo las cuales se ofrece Music Influence Chain (la "App"), así como los derechos y obligaciones entre el operador y los usuarios respecto al uso de la App. Por favor, lea atentamente estos Términos antes de usar la App. Al descargar o usar la App, se considera que ha aceptado estos Términos.</p>
+
+        <h2>1. Ámbito de aplicación</h2>
+        <p>Estos Términos regulan el uso de la aplicación para iOS "Music Influence Chain". Cualquier norma o directriz individual publicada por el operador dentro de la App o en su sitio web también forma parte de estos Términos.</p>
+
+        <h2>2. Precios y facturación</h2>
+        <ul>
+          <li>El contenido principal (75 artistas) está disponible de forma gratuita.</li>
+          <li>Desbloqueo del juego completo (¥600): acceso a más de 820 artistas principales.</li>
+          <li>Paquetes DLC: hay paquetes temáticos de artistas adicionales disponibles para compra por separado (actualmente el "J-Rock &amp; Pop Pack vol.1" por ¥400).</li>
+          <li>Todas las compras dentro de la app se procesan a través de la App Store de Apple.</li>
+          <li>Los reembolsos se gestionan conforme a la política de reembolsos de Apple.</li>
+        </ul>
+
+        <h2>3. Conductas prohibidas</h2>
+        <p>Al usar la App, los usuarios no deben:</p>
+        <ul>
+          <li>infringir leyes, normativas, o el orden público y las buenas costumbres;</li>
+          <li>realizar ingeniería inversa de la App, intentar la extracción no autorizada de datos, o analizar o modificar la App;</li>
+          <li>utilizar el contenido de la App con fines comerciales sin autorización del operador;</li>
+          <li>distribuir materiales protegidos por derechos de autor sin autorización, o infringir de otro modo los derechos de terceros.</li>
+        </ul>
+
+        <h2>4. Contenido y fuentes de datos</h2>
+        <p>La información de los artistas y las imágenes que se muestran en la App proceden de Wikipedia y Wikimedia Commons. Las relaciones de influencia que se muestran en la App hacen referencia a descripciones de Wikipedia. El operador no garantiza la exactitud, integridad o vigencia de estos datos. Las imágenes se utilizan conforme a sus respectivas licencias Creative Commons o como obras de dominio público.</p>
+
+        <h2>5. Propiedad intelectual</h2>
+        <p>El diseño, el código y el contenido original de la App son propiedad del desarrollador. El contenido de Wikipedia y Wikimedia se utiliza conforme a sus respectivas licencias. Los nombres de los artistas y las marcas relacionadas pertenecen a sus respectivos propietarios.</p>
+
+        <h2>6. Exención de responsabilidad</h2>
+        <p>La App se proporciona "tal cual", sin garantías de ningún tipo. El operador no es responsable de los daños derivados del uso de esta App.</p>
+
+        <h2>7. Cambios a estos Términos</h2>
+        <p>El operador se reserva el derecho de modificar estos Términos en cualquier momento. Los cambios se publicarán en esta página.</p>
+
+        <h2>8. Ley aplicable</h2>
+        <p>Estos Términos se rigen por las leyes de Japón.</p>
+
+        <h2>9. Contacto</h2>
+        <p>Si tiene preguntas sobre estos Términos, utilice el <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">formulario de contacto</a>.</p>
       </div>
     </div>
   </main>
 
+  <!-- ============ Footer ============ -->
   <footer class="site-footer">
     <div class="wrap">
-      <div class="footer-bottom" style="margin-top:0;border-top:0;">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/logo.png" alt="" />
+          <div>
+            <div class="ft-name">Music Influence Chain</div>
+            <p class="ft-desc">
+              <span class="lang-ja">レコード棚から音楽のルーツをたどる、影響の連鎖の音楽クイズ。</span>
+              <span class="lang-en">A music quiz tracing the chain of influence, from the record shelf to the roots.</span>
+              <span class="lang-zh-Hans">从唱片架追溯音乐根源的影响链音乐问答。</span>
+              <span class="lang-zh-Hant">從唱片架追溯音樂根源的影響鏈音樂問答。</span>
+              <span class="lang-ko">레코드 선반에서 음악의 뿌리를 따라가는, 영향의 연쇄 음악 퀴즈.</span>
+              <span class="lang-es">Un quiz musical que rastrea la cadena de influencia, desde la estantería de discos hasta las raíces.</span>
+            </p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>
+            <span class="lang-ja">メニュー</span>
+            <span class="lang-en">Explore</span>
+            <span class="lang-zh-Hans">菜单</span>
+            <span class="lang-zh-Hant">選單</span>
+            <span class="lang-ko">메뉴</span>
+            <span class="lang-es">Menú</span>
+          </h4>
+          <a href="index.html#about">
+            <span class="lang-ja">アプリについて</span>
+            <span class="lang-en">About</span>
+            <span class="lang-zh-Hans">关于应用</span>
+            <span class="lang-zh-Hant">關於應用</span>
+            <span class="lang-ko">앱 소개</span>
+            <span class="lang-es">Acerca de</span>
+          </a>
+          <a href="index.html#modes">
+            <span class="lang-ja">モード</span>
+            <span class="lang-en">Modes</span>
+            <span class="lang-zh-Hans">模式</span>
+            <span class="lang-zh-Hant">模式</span>
+            <span class="lang-ko">모드</span>
+            <span class="lang-es">Modos</span>
+          </a>
+          <a href="index.html#how">
+            <span class="lang-ja">遊び方</span>
+            <span class="lang-en">How it works</span>
+            <span class="lang-zh-Hans">玩法</span>
+            <span class="lang-zh-Hant">玩法</span>
+            <span class="lang-ko">플레이 방법</span>
+            <span class="lang-es">Cómo jugar</span>
+          </a>
+          <a href="index.html#faq">
+            <span class="lang-ja">FAQ</span>
+            <span class="lang-en">FAQ</span>
+            <span class="lang-zh-Hans">FAQ</span>
+            <span class="lang-zh-Hant">FAQ</span>
+            <span class="lang-ko">FAQ</span>
+            <span class="lang-es">FAQ</span>
+          </a>
+          <a href="https://apps.apple.com/jp/app/%E9%9F%B3%E6%A5%BD%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%84%E3%82%92%E3%83%87%E3%82%A3%E3%82%B0%E3%82%8B-roots/id6773954689" target="_blank" rel="noopener">
+            <span class="lang-ja">App Store</span>
+            <span class="lang-en">App Store</span>
+            <span class="lang-zh-Hans">App Store</span>
+            <span class="lang-zh-Hant">App Store</span>
+            <span class="lang-ko">App Store</span>
+            <span class="lang-es">App Store</span>
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>
+            <span class="lang-ja">サポート・規約</span>
+            <span class="lang-en">Support &amp; Legal</span>
+            <span class="lang-zh-Hans">支持与条款</span>
+            <span class="lang-zh-Hant">支援與條款</span>
+            <span class="lang-ko">지원 및 약관</span>
+            <span class="lang-es">Soporte y legal</span>
+          </h4>
+          <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">
+            <span class="lang-ja">お問い合わせ</span>
+            <span class="lang-en">Contact</span>
+            <span class="lang-zh-Hans">联系我们</span>
+            <span class="lang-zh-Hant">聯絡我們</span>
+            <span class="lang-ko">문의</span>
+            <span class="lang-es">Contacto</span>
+          </a>
+          <a href="terms.html">
+            <span class="lang-ja">利用規約</span>
+            <span class="lang-en">Terms of Service</span>
+            <span class="lang-zh-Hans">使用条款</span>
+            <span class="lang-zh-Hant">使用條款</span>
+            <span class="lang-ko">이용약관</span>
+            <span class="lang-es">Términos de servicio</span>
+          </a>
+          <a href="privacy.html">
+            <span class="lang-ja">プライバシーポリシー</span>
+            <span class="lang-en">Privacy Policy</span>
+            <span class="lang-zh-Hans">隐私政策</span>
+            <span class="lang-zh-Hant">隱私權政策</span>
+            <span class="lang-ko">개인정보처리방침</span>
+            <span class="lang-es">Política de privacidad</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
         <span>© 2026 Music Influence Chain</span>
         <span>
-          <a href="terms.html" style="color:var(--text-dim);text-decoration:none;"><span class="lang-ja">利用規約</span><span class="lang-en">Terms</span></a>
-          &nbsp;·&nbsp;
-          <a href="privacy.html" style="color:var(--text-dim);text-decoration:none;"><span class="lang-ja">プライバシーポリシー</span><span class="lang-en">Privacy</span></a>
+          <span class="lang-ja">画像・データは Wikipedia / Wikimedia Commons より取得</span>
+          <span class="lang-en">Images &amp; data sourced from Wikipedia / Wikimedia Commons</span>
+          <span class="lang-zh-Hans">图片和数据来自 Wikipedia / Wikimedia Commons</span>
+          <span class="lang-zh-Hant">圖片和資料來自 Wikipedia / Wikimedia Commons</span>
+          <span class="lang-ko">이미지 및 데이터는 Wikipedia / Wikimedia Commons에서 가져옴</span>
+          <span class="lang-es">Imágenes y datos de Wikipedia / Wikimedia Commons</span>
         </span>
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/i18n.js?v=2"></script>
+  <script src="assets/js/i18n.js?v=3"></script>
 </body>
 </html>
