@@ -297,7 +297,7 @@ a { color: inherit; }
   font-weight: 700;
 }
 .hero h1 .m1 { color: var(--accent); }
-.hero h1 .m2 { color: var(--cream-soft); display: block; }
+.hero h1 .m2 { color: var(--cream-soft); }
 .hero .tagline {
   margin: 22px 0 8px;
   font-size: clamp(17px, 2.2vw, 22px);
@@ -644,11 +644,12 @@ section { padding: 78px 0; }
 }
 .announcement-card .ann-badge {
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(168,84,40,0.4);
 }
 .announcement-card .ann-body { flex: 1; min-width: 0; }
 .announcement-card .ann-title {
