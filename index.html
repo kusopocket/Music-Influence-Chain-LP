@@ -9,9 +9,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <link rel="stylesheet" href="assets/css/style.css?v=3" />
 </head>
-<body data-title-ja="Music Influence Chain — 音楽のルーツをたどる" data-title-en="Music Influence Chain — Trace the roots of music">
+<body
+  data-title-ja="Music Influence Chain — 音楽のルーツをたどる"
+  data-title-en="Music Influence Chain — Trace the roots of music"
+  data-title-zh-Hans="Music Influence Chain — 追溯音乐的根源"
+  data-title-zh-Hant="Music Influence Chain — 追溯音樂的根源"
+  data-title-ko="Music Influence Chain — 음악의 뿌리를 따라가다"
+  data-title-es="Music Influence Chain — Descubre las raíces de la música"
+>
   <div class="bg-ambient"></div>
   <div class="bg-grain"></div>
 
@@ -23,18 +30,91 @@
         <span class="brand-name"><b>Music</b><br />Influence Chain</span>
       </a>
       <nav class="nav">
-        <a href="#about"><span class="lang-ja">アプリについて</span><span class="lang-en">About</span></a>
-        <a href="#modes"><span class="lang-ja">モード</span><span class="lang-en">Modes</span></a>
-        <a href="#how"><span class="lang-ja">遊び方</span><span class="lang-en">How it works</span></a>
-        <a href="#faq"><span class="lang-ja">FAQ</span><span class="lang-en">FAQ</span></a>
-        <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener"><span class="lang-ja">お問い合わせ</span><span class="lang-en">Contact</span></a>
+        <a href="#about">
+          <span class="lang-ja">アプリについて</span>
+          <span class="lang-en">About</span>
+          <span class="lang-zh-Hans">关于应用</span>
+          <span class="lang-zh-Hant">關於應用</span>
+          <span class="lang-ko">앱 소개</span>
+          <span class="lang-es">Acerca de</span>
+        </a>
+        <a href="#modes">
+          <span class="lang-ja">モード</span>
+          <span class="lang-en">Modes</span>
+          <span class="lang-zh-Hans">模式</span>
+          <span class="lang-zh-Hant">模式</span>
+          <span class="lang-ko">모드</span>
+          <span class="lang-es">Modos</span>
+        </a>
+        <a href="#how">
+          <span class="lang-ja">遊び方</span>
+          <span class="lang-en">How it works</span>
+          <span class="lang-zh-Hans">玩法</span>
+          <span class="lang-zh-Hant">玩法</span>
+          <span class="lang-ko">플레이 방법</span>
+          <span class="lang-es">Cómo jugar</span>
+        </a>
+        <a href="#faq">
+          <span class="lang-ja">FAQ</span>
+          <span class="lang-en">FAQ</span>
+          <span class="lang-zh-Hans">FAQ</span>
+          <span class="lang-zh-Hant">FAQ</span>
+          <span class="lang-ko">FAQ</span>
+          <span class="lang-es">FAQ</span>
+        </a>
+        <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">
+          <span class="lang-ja">お問い合わせ</span>
+          <span class="lang-en">Contact</span>
+          <span class="lang-zh-Hans">联系我们</span>
+          <span class="lang-zh-Hant">聯絡我們</span>
+          <span class="lang-ko">문의</span>
+          <span class="lang-es">Contacto</span>
+        </a>
       </nav>
       <div class="lang-switch" role="group" aria-label="Language">
-        <button data-lang="ja" type="button">日本語</button>
-        <button data-lang="en" type="button">EN</button>
+        <button class="lang-toggle" type="button">
+          <span class="lang-current">日本語</span>
+        </button>
+        <div class="lang-dropdown">
+          <button data-lang="ja" type="button">日本語</button>
+          <button data-lang="en" type="button">English</button>
+          <button data-lang="zh-Hans" type="button">简体中文</button>
+          <button data-lang="zh-Hant" type="button">繁體中文</button>
+          <button data-lang="ko" type="button">한국어</button>
+          <button data-lang="es" type="button">Español</button>
+        </div>
       </div>
     </div>
   </header>
+
+  <!-- ============ Announcement Banner ============ -->
+  <section class="announcement-banner" id="announcements-banner">
+    <div class="wrap">
+      <a href="dlc-jrock-pop-v1.html" class="announcement-card dlc-card">
+        <span class="ann-badge">🎸</span>
+        <div class="ann-body">
+          <p class="ann-title">
+            <span class="lang-ja">J-Rock &amp; Pop Pack vol.1 配信開始！</span>
+            <span class="lang-en">J-Rock &amp; Pop Pack vol.1 — Now Available!</span>
+            <span class="lang-zh-Hans">J-Rock &amp; Pop Pack vol.1 现已推出！</span>
+            <span class="lang-zh-Hant">J-Rock &amp; Pop Pack vol.1 現已推出！</span>
+            <span class="lang-ko">J-Rock &amp; Pop Pack vol.1 출시!</span>
+            <span class="lang-es">¡J-Rock &amp; Pop Pack vol.1 ya disponible!</span>
+          </p>
+          <p class="ann-desc">
+            <span class="lang-ja">X JAPAN、B'z、Mr.Children、YOASOBI など197組の日本のロック・ポップアーティストをアンロック</span>
+            <span class="lang-en">Unlock 197 Japanese rock &amp; pop artists including X JAPAN, B'z, Mr.Children, YOASOBI and more</span>
+            <span class="lang-zh-Hans">解锁197位日本摇滚和流行艺术家，包括X JAPAN、B'z、Mr.Children、YOASOBI等</span>
+            <span class="lang-zh-Hant">解鎖197位日本搖滾和流行藝術家，包括X JAPAN、B'z、Mr.Children、YOASOBI等</span>
+            <span class="lang-ko">X JAPAN, B'z, Mr.Children, YOASOBI 등 197명의 일본 록·팝 아티스트를 잠금 해제</span>
+            <span class="lang-es">Desbloquea 197 artistas de rock y pop japonés incluyendo X JAPAN, B'z, Mr.Children, YOASOBI y más</span>
+          </p>
+        </div>
+        <span class="ann-price">¥400</span>
+        <span class="ann-arrow">→</span>
+      </a>
+    </div>
+  </section>
 
   <!-- ============ Hero ============ -->
   <section class="hero">
@@ -45,26 +125,36 @@
         <p class="tagline">
           <span class="lang-ja">レコード棚から音楽のルーツをたどる</span>
           <span class="lang-en">Trace the roots of music, one record at a time</span>
+          <span class="lang-zh-Hans">从唱片架追溯音乐的根源</span>
+          <span class="lang-zh-Hant">從唱片架追溯音樂的根源</span>
+          <span class="lang-ko">레코드 선반에서 음악의 뿌리를 따라가다</span>
+          <span class="lang-es">Descubre las raíces de la música, disco a disco</span>
         </p>
         <p class="sub">
           <span class="lang-ja">アーティスト同士の「影響の連鎖」をたどる音楽クイズ。Wikipedia をもとに、好きな一枚から音楽史の源流へさかのぼります。</span>
           <span class="lang-en">A music quiz that follows the chain of influence between artists. Powered by Wikipedia, it lets you start from a record you love and travel back to the source of music history.</span>
+          <span class="lang-zh-Hans">一款追溯艺术家之间"影响链"的音乐问答游戏。基于维基百科，从你喜欢的一张唱片出发，回溯音乐史的源流。</span>
+          <span class="lang-zh-Hant">一款追溯藝術家之間「影響鏈」的音樂問答遊戲。基於維基百科，從你喜歡的一張唱片出發，回溯音樂史的源流。</span>
+          <span class="lang-ko">아티스트 사이의 '영향의 연쇄'를 따라가는 음악 퀴즈. 위키백과를 기반으로, 좋아하는 레코드에서 음악사의 원류로 거슬러 올라갑니다.</span>
+          <span class="lang-es">Un quiz musical que sigue la cadena de influencia entre artistas. Basado en Wikipedia, te permite partir de un disco que amas y viajar hasta las raíces de la historia musical.</span>
         </p>
         <div class="hero-cta">
-          <span class="coming-soon">
-            <span class="dot"></span>
-            <span class="lang-ja">iOS版 近日公開</span>
-            <span class="lang-en">Coming soon on iOS</span>
-          </span>
+          <a class="appstore-badge" href="https://apps.apple.com/jp/app/%E9%9F%B3%E6%A5%BD%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%84%E3%82%92%E3%83%87%E3%82%A3%E3%82%B0%E3%82%8B-roots/id6773954689" target="_blank" rel="noopener">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" />
+          </a>
           <a class="btn btn-ghost" href="#about">
             <span class="lang-ja">アプリの特徴を見る</span>
             <span class="lang-en">See what it does</span>
+            <span class="lang-zh-Hans">查看功能特点</span>
+            <span class="lang-zh-Hant">查看功能特點</span>
+            <span class="lang-ko">앱 기능 보기</span>
+            <span class="lang-es">Ver características</span>
           </a>
         </div>
       </div>
       <div class="hero-art reveal">
         <div class="phone phone-float">
-          <img src="assets/img/screen-home.png" alt="Music Influence Chain home screen" />
+          <img data-screenshot="01_home.png" src="assets/img/screenshots/ja/01_home.png" alt="Music Influence Chain home screen" />
         </div>
       </div>
     </div>
@@ -76,20 +166,71 @@
       <p class="lead reveal">
         <span class="lang-ja">音楽は、つながっている。</span>
         <span class="lang-en">All music is connected.</span>
+        <span class="lang-zh-Hans">音乐，是相连的。</span>
+        <span class="lang-zh-Hant">音樂，是相連的。</span>
+        <span class="lang-ko">음악은, 이어져 있다.</span>
+        <span class="lang-es">Toda la música está conectada.</span>
       </p>
       <div class="body reveal">
         <p>
           <span class="lang-ja">あなたの好きなアーティストには、影響を受けた誰かがいて、その誰かにもまた源流がある。<strong>Music Influence Chain</strong> は、その「影響の連鎖」をたどっていく音楽クイズアプリです。</span>
           <span class="lang-en">Every artist you love was shaped by someone before them — and that someone had roots too. <strong>Music Influence Chain</strong> is a music quiz app for tracing those chains of influence, link by link.</span>
+          <span class="lang-zh-Hans">你喜欢的艺术家，都受到过某位前辈的影响，而那位前辈也有自己的源流。<strong>Music Influence Chain</strong> 是一款追溯这种"影响链"的音乐问答应用。</span>
+          <span class="lang-zh-Hant">你喜歡的藝術家，都受到過某位前輩的影響，而那位前輩也有自己的源流。<strong>Music Influence Chain</strong> 是一款追溯這種「影響鏈」的音樂問答應用。</span>
+          <span class="lang-ko">당신이 좋아하는 아티스트에게는 영향을 준 누군가가 있고, 그 누군가에게도 또 원류가 있습니다. <strong>Music Influence Chain</strong>은 그 '영향의 연쇄'를 따라가는 음악 퀴즈 앱입니다.</span>
+          <span class="lang-es">Todo artista que amas fue moldeado por alguien antes que él, y esa persona también tuvo sus raíces. <strong>Music Influence Chain</strong> es una app de quiz musical para trazar esas cadenas de influencia, eslabón por eslabón.</span>
         </p>
         <p>
           <span class="lang-ja">出題は Wikipedia / Wikimedia Commons の記述をもとに構成。クイズを解きながら、ジャンルや時代を越えてアーティストがどうつながっているのかが自然と見えてきます。</span>
           <span class="lang-en">Questions are built from descriptions on Wikipedia and Wikimedia Commons. As you play, you start to see how artists connect across genres and eras — naturally, without studying.</span>
+          <span class="lang-zh-Hans">题目基于维基百科和维基共享资源的描述构建。在解答问题的过程中，你会自然地发现艺术家们如何跨越流派与时代相互联系。</span>
+          <span class="lang-zh-Hant">題目基於維基百科和維基共享資源的描述構建。在解答問題的過程中，你會自然地發現藝術家們如何跨越流派與時代相互聯繫。</span>
+          <span class="lang-ko">문제는 위키백과와 위키미디어 공용의 기술을 바탕으로 구성됩니다. 퀴즈를 풀면서 장르와 시대를 넘어 아티스트들이 어떻게 연결되어 있는지 자연스럽게 보이기 시작합니다.</span>
+          <span class="lang-es">Las preguntas se basan en descripciones de Wikipedia y Wikimedia Commons. Mientras juegas, empiezas a ver cómo se conectan los artistas a través de géneros y épocas, de forma natural y sin estudiar.</span>
         </p>
         <p>
           <span class="lang-ja">温かなローズウッドの世界観と、回るレコードの手触り。気軽に遊べて、音楽の聴き方が少し変わる。そんな一本です。</span>
           <span class="lang-en">Wrapped in a warm rosewood world and the tactile feel of a spinning record, it's easy to pick up — and it just might change how you listen to music.</span>
+          <span class="lang-zh-Hans">温暖的玫木质感世界，加上转动唱片的触感。一款轻松上手，又会悄悄改变你听音乐方式的作品。</span>
+          <span class="lang-zh-Hant">溫暖的玫木質感世界，加上轉動唱片的觸感。一款輕鬆上手，又會悄悄改變你聽音樂方式的作品。</span>
+          <span class="lang-ko">따뜻한 로즈우드의 세계관과 돌아가는 레코드의 질감. 가볍게 즐길 수 있으면서, 음악을 듣는 방식을 살짝 바꿔주는 그런 작품입니다.</span>
+          <span class="lang-es">Envuelto en un cálido mundo de palo de rosa y la sensación táctil de un disco girando, es fácil de empezar a jugar, y puede que cambie la forma en que escuchas música.</span>
         </p>
+        <div class="dlc-stats">
+          <div class="dlc-stat">
+            <span class="stat-num">996+</span>
+            <span class="stat-label">
+              <span class="lang-ja">アーティスト</span>
+              <span class="lang-en">artists</span>
+              <span class="lang-zh-Hans">位艺术家</span>
+              <span class="lang-zh-Hant">位藝術家</span>
+              <span class="lang-ko">명의 아티스트</span>
+              <span class="lang-es">artistas</span>
+            </span>
+          </div>
+          <div class="dlc-stat">
+            <span class="stat-num">1,170+</span>
+            <span class="stat-label">
+              <span class="lang-ja">影響関係</span>
+              <span class="lang-en">influence connections</span>
+              <span class="lang-zh-Hans">个影响关系</span>
+              <span class="lang-zh-Hant">個影響關係</span>
+              <span class="lang-ko">개의 영향 관계</span>
+              <span class="lang-es">conexiones de influencia</span>
+            </span>
+          </div>
+          <div class="dlc-stat">
+            <span class="stat-num">6</span>
+            <span class="stat-label">
+              <span class="lang-ja">言語対応</span>
+              <span class="lang-en">languages</span>
+              <span class="lang-zh-Hans">种语言</span>
+              <span class="lang-zh-Hant">種語言</span>
+              <span class="lang-ko">개 언어 지원</span>
+              <span class="lang-es">idiomas</span>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -101,10 +242,18 @@
         <h2>
           <span class="lang-ja">3つの遊び方</span>
           <span class="lang-en">Three ways to play</span>
+          <span class="lang-zh-Hans">三种玩法</span>
+          <span class="lang-zh-Hant">三種玩法</span>
+          <span class="lang-ko">3가지 플레이 방법</span>
+          <span class="lang-es">Tres formas de jugar</span>
         </h2>
         <p>
           <span class="lang-ja">気分に合わせて、ルーツのたどり方を選べます。</span>
           <span class="lang-en">Pick how you want to trace the roots, depending on your mood.</span>
+          <span class="lang-zh-Hans">根据心情，选择追溯根源的方式。</span>
+          <span class="lang-zh-Hant">根據心情，選擇追溯根源的方式。</span>
+          <span class="lang-ko">기분에 맞게 뿌리를 따라가는 방법을 선택할 수 있습니다.</span>
+          <span class="lang-es">Elige cómo quieres rastrear las raíces, según tu estado de ánimo.</span>
         </p>
       </div>
       <div class="modes">
@@ -112,14 +261,22 @@
           <div class="mode-ico">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 0 1 4.5 1.5c0 1.5-2 2-2 3"/><line x1="12" y1="16.5" x2="12" y2="16.6"/></svg>
           </div>
-          <span class="tag">Quiz Mode</span>
+          <span class="tag">Roots Route</span>
           <h3>
-            <span class="lang-ja">クイズモード</span>
-            <span class="lang-en">Quiz Mode</span>
+            <span class="lang-ja">ルーツルート</span>
+            <span class="lang-en">Roots Route</span>
+            <span class="lang-zh-Hans">寻根之路</span>
+            <span class="lang-zh-Hant">尋根之路</span>
+            <span class="lang-ko">루츠 루트</span>
+            <span class="lang-es">Ruta de Raíces</span>
           </h3>
           <p>
-            <span class="lang-ja">出題範囲を選んでプレイ。制限時間とライフのなかで、アーティストのルーツを当てていきます。</span>
-            <span class="lang-en">Choose a category and play. Race against the clock and your lives to guess each artist's roots.</span>
+            <span class="lang-ja">60秒のタイマーと4つのライフで挑む4択クイズ。アーティストの影響関係を当てて、スコアとコンボを重ねよう。</span>
+            <span class="lang-en">A four-choice quiz with a 60-second timer and 4 lives. Guess the influence relationships between artists and build your score and combos.</span>
+            <span class="lang-zh-Hans">60秒计时、4条命的四选一问答。猜测艺术家之间的影响关系，累积得分和连击。</span>
+            <span class="lang-zh-Hant">60秒計時、4條命的四選一問答。猜測藝術家之間的影響關係，累積得分和連擊。</span>
+            <span class="lang-ko">60초 타이머와 라이프 4개의 4지선다 퀴즈. 아티스트의 영향 관계를 맞추고 스코어와 콤보를 쌓아보세요.</span>
+            <span class="lang-es">Un quiz de cuatro opciones con temporizador de 60 segundos y 4 vidas. Adivina las relaciones de influencia entre artistas y acumula puntuación y combos.</span>
           </p>
         </div>
         <div class="mode-card reveal">
@@ -130,10 +287,18 @@
           <h3>
             <span class="lang-ja">カスタムルート</span>
             <span class="lang-en">Custom Route</span>
+            <span class="lang-zh-Hans">自定义路线</span>
+            <span class="lang-zh-Hant">自訂路線</span>
+            <span class="lang-ko">커스텀 루트</span>
+            <span class="lang-es">Ruta Personalizada</span>
           </h3>
           <p>
-            <span class="lang-ja">自分だけの音楽ルーツクイズを作成。好きなアーティストを起点に、オリジナルの連鎖を組み立てられます。</span>
-            <span class="lang-en">Build your own music-roots quiz. Start from any artist you like and assemble your own chain of influence.</span>
+            <span class="lang-ja">時代・地域・ジャンルでフィルターして、自分だけのクイズをプレイ。好みの範囲で影響の連鎖を探求できます。</span>
+            <span class="lang-en">Filter by era, region, and genre to play your own custom quiz. Explore chains of influence within your preferred scope.</span>
+            <span class="lang-zh-Hans">按时代、地区和流派筛选，打造专属问答。在你偏好的范围内探索影响链。</span>
+            <span class="lang-zh-Hant">按時代、地區和流派篩選，打造專屬問答。在你偏好的範圍內探索影響鏈。</span>
+            <span class="lang-ko">시대, 지역, 장르로 필터링하여 나만의 퀴즈를 플레이. 원하는 범위에서 영향의 연쇄를 탐구하세요.</span>
+            <span class="lang-es">Filtra por época, región y género para jugar tu propio quiz personalizado. Explora las cadenas de influencia dentro de tu ámbito preferido.</span>
           </p>
         </div>
         <div class="mode-card reveal">
@@ -144,10 +309,18 @@
           <h3>
             <span class="lang-ja">ルーツライブラリ</span>
             <span class="lang-en">Roots Library</span>
+            <span class="lang-zh-Hans">根源图书馆</span>
+            <span class="lang-zh-Hant">根源圖書館</span>
+            <span class="lang-ko">루츠 라이브러리</span>
+            <span class="lang-es">Biblioteca de Raíces</span>
           </h3>
           <p>
             <span class="lang-ja">好きなアーティストのルーツを学ぶ。影響の樹形図（Influence Tree）で、つながりをじっくり眺められます。</span>
             <span class="lang-en">Study the roots of your favourite artists. Explore the connections at your own pace with the Influence Tree.</span>
+            <span class="lang-zh-Hans">了解你喜欢的艺术家的根源。通过影响树形图，细细品味他们之间的联系。</span>
+            <span class="lang-zh-Hant">了解你喜歡的藝術家的根源。透過影響樹形圖，細細品味他們之間的聯繫。</span>
+            <span class="lang-ko">좋아하는 아티스트의 뿌리를 알아보세요. 인플루언스 트리로 연결 관계를 천천히 살펴볼 수 있습니다.</span>
+            <span class="lang-es">Estudia las raíces de tus artistas favoritos. Explora las conexiones a tu ritmo con el Árbol de Influencias.</span>
           </p>
         </div>
       </div>
@@ -161,10 +334,18 @@
         <h2>
           <span class="lang-ja">遊び方はかんたん</span>
           <span class="lang-en">How it works</span>
+          <span class="lang-zh-Hans">玩法简单</span>
+          <span class="lang-zh-Hant">玩法簡單</span>
+          <span class="lang-ko">쉽게 즐기는 방법</span>
+          <span class="lang-es">Cómo jugar</span>
         </h2>
         <p>
           <span class="lang-ja">STARTを押して、レコードに針を落とすだけ。</span>
           <span class="lang-en">Hit START and drop the needle — that's it.</span>
+          <span class="lang-zh-Hans">按下START，将唱针落下。</span>
+          <span class="lang-zh-Hant">按下START，將唱針落下。</span>
+          <span class="lang-ko">START를 누르고 바늘을 내려놓기만 하면 됩니다.</span>
+          <span class="lang-es">Pulsa START y baja la aguja — eso es todo.</span>
         </p>
       </div>
       <div class="steps">
@@ -173,10 +354,18 @@
           <h3>
             <span class="lang-ja">アーティストが流れる</span>
             <span class="lang-en">An artist appears</span>
+            <span class="lang-zh-Hans">艺术家登场</span>
+            <span class="lang-zh-Hant">藝術家登場</span>
+            <span class="lang-ko">아티스트가 등장</span>
+            <span class="lang-es">Aparece un artista</span>
           </h3>
           <p>
             <span class="lang-ja">いま「再生中」のアーティストが表示されます。次にたどるべきルーツはどれ？</span>
             <span class="lang-en">The artist that's "now playing" is shown. Which one are their roots?</span>
+            <span class="lang-zh-Hans">当前"正在播放"的艺术家出现了。他们的根源是谁？</span>
+            <span class="lang-zh-Hant">當前「正在播放」的藝術家出現了。他們的根源是誰？</span>
+            <span class="lang-ko">"지금 재생 중"인 아티스트가 나타납니다. 다음으로 따라갈 뿌리는?</span>
+            <span class="lang-es">Se muestra el artista que está "sonando". ¿Cuáles son sus raíces?</span>
           </p>
         </div>
         <div class="step reveal">
@@ -184,10 +373,18 @@
           <h3>
             <span class="lang-ja">ルーツを選ぶ</span>
             <span class="lang-en">Choose the root</span>
+            <span class="lang-zh-Hans">选择根源</span>
+            <span class="lang-zh-Hant">選擇根源</span>
+            <span class="lang-ko">루츠를 선택</span>
+            <span class="lang-es">Elige la raíz</span>
           </h3>
           <p>
             <span class="lang-ja">4つの候補から、影響を与えたアーティストを選択。Tips がそっと背中を押します。</span>
             <span class="lang-en">Pick the artist who influenced them from four candidates. Tips give you a gentle nudge.</span>
+            <span class="lang-zh-Hans">从四个候选中选出影响了他们的艺术家。提示会给你温柔的推动。</span>
+            <span class="lang-zh-Hant">從四個候選中選出影響了他們的藝術家。提示會給你溫柔的推動。</span>
+            <span class="lang-ko">4명의 후보 중에서 영향을 준 아티스트를 선택. 팁이 살짝 힌트를 줍니다.</span>
+            <span class="lang-es">Elige al artista que los influyó entre cuatro candidatos. Las pistas te dan un empujón suave.</span>
           </p>
         </div>
         <div class="step reveal">
@@ -195,10 +392,18 @@
           <h3>
             <span class="lang-ja">連鎖がのびていく</span>
             <span class="lang-en">The chain grows</span>
+            <span class="lang-zh-Hans">链条不断延伸</span>
+            <span class="lang-zh-Hant">鏈條不斷延伸</span>
+            <span class="lang-ko">연쇄가 이어진다</span>
+            <span class="lang-es">La cadena crece</span>
           </h3>
           <p>
             <span class="lang-ja">正解するほど影響の連鎖が長くのびる。スコアとコンボを重ねて源流をめざそう。</span>
             <span class="lang-en">Each correct answer extends the chain. Stack up score and combos as you reach for the source.</span>
+            <span class="lang-zh-Hans">每答对一题，影响链就会延伸。累积分数和连击，向源头进发。</span>
+            <span class="lang-zh-Hant">每答對一題，影響鏈就會延伸。累積分數和連擊，向源頭進發。</span>
+            <span class="lang-ko">정답을 맞힐수록 영향의 연쇄가 길어집니다. 스코어와 콤보를 쌓으며 원류를 향해 나아가세요.</span>
+            <span class="lang-es">Cada respuesta correcta extiende la cadena. Acumula puntuación y combos mientras llegas a la fuente.</span>
           </p>
         </div>
       </div>
@@ -212,33 +417,111 @@
         <h2>
           <span class="lang-ja">画面を見る</span>
           <span class="lang-en">A look inside</span>
+          <span class="lang-zh-Hans">画面一览</span>
+          <span class="lang-zh-Hant">畫面一覽</span>
+          <span class="lang-ko">화면 미리보기</span>
+          <span class="lang-es">Un vistazo</span>
         </h2>
       </div>
       <div class="shots">
         <figure class="reveal">
-          <div class="phone"><img src="assets/img/screen-home.png" alt="Home screen" /></div>
+          <div class="phone"><img data-screenshot="01_home.png" src="assets/img/screenshots/ja/01_home.png" alt="Home screen" /></div>
           <figcaption>
             <b>HOME</b>
             <span class="lang-ja">レコードに針を落としてスタート</span>
             <span class="lang-en">Drop the needle to start</span>
+            <span class="lang-zh-Hans">落下唱针即可开始</span>
+            <span class="lang-zh-Hant">落下唱針即可開始</span>
+            <span class="lang-ko">바늘을 내려 시작</span>
+            <span class="lang-es">Baja la aguja para empezar</span>
           </figcaption>
         </figure>
         <figure class="reveal">
-          <div class="phone"><img src="assets/img/screen-quiz.png" alt="Quiz screen" /></div>
+          <div class="phone"><img data-screenshot="02_quiz.png" src="assets/img/screenshots/ja/02_quiz.png" alt="Quiz screen" /></div>
           <figcaption>
             <b>QUIZ</b>
             <span class="lang-ja">4択でルーツを当てる</span>
             <span class="lang-en">Guess the roots from four choices</span>
+            <span class="lang-zh-Hans">四选一猜根源</span>
+            <span class="lang-zh-Hant">四選一猜根源</span>
+            <span class="lang-ko">4지선다로 루츠를 맞추기</span>
+            <span class="lang-es">Adivina las raíces entre cuatro opciones</span>
           </figcaption>
         </figure>
         <figure class="reveal">
-          <div class="phone"><img src="assets/img/screen-roots.png" alt="Artist roots screen" /></div>
+          <div class="phone"><img data-screenshot="03_beatles_roots.png" src="assets/img/screenshots/ja/03_beatles_roots.png" alt="Artist roots screen" /></div>
           <figcaption>
             <b>ROOTS</b>
             <span class="lang-ja">影響の樹形図でつながりを知る</span>
             <span class="lang-en">See connections in the Influence Tree</span>
+            <span class="lang-zh-Hans">通过影响树形图了解联系</span>
+            <span class="lang-zh-Hant">透過影響樹形圖了解聯繫</span>
+            <span class="lang-ko">인플루언스 트리로 연결 관계 알아보기</span>
+            <span class="lang-es">Descubre conexiones en el Árbol de Influencias</span>
           </figcaption>
         </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ News ============ -->
+  <section id="news">
+    <div class="wrap">
+      <div class="section-head reveal" style="margin-left:auto;margin-right:auto;text-align:center;">
+        <h2>
+          <span class="lang-ja">お知らせ</span>
+          <span class="lang-en">News</span>
+          <span class="lang-zh-Hans">公告</span>
+          <span class="lang-zh-Hant">公告</span>
+          <span class="lang-ko">공지사항</span>
+          <span class="lang-es">Noticias</span>
+        </h2>
+      </div>
+      <div class="news-list">
+        <div class="news-item">
+          <div class="news-meta">
+            <span class="news-date">2026-06-29</span>
+            <span class="news-category">INFO</span>
+          </div>
+          <h3 class="news-title">
+            <span class="lang-ja">Music Influence Chain 正式リリース！</span>
+            <span class="lang-en">Music Influence Chain is now available!</span>
+            <span class="lang-zh-Hans">Music Influence Chain 正式上线！</span>
+            <span class="lang-zh-Hant">Music Influence Chain 正式上線！</span>
+            <span class="lang-ko">Music Influence Chain 정식 출시!</span>
+            <span class="lang-es">¡Music Influence Chain ya está disponible!</span>
+          </h3>
+          <p class="news-body">
+            <span class="lang-ja">Music Influence Chain をダウンロードいただきありがとうございます！レトロなレコード棚のパズルゲームで、お気に入りのアーティストのルーツやつながりを探求しましょう。世代やジャンルを超えて、伝説的なミュージシャンたちがどのように影響し合ってきたかを発見してください。</span>
+            <span class="lang-en">Thank you for downloading Music Influence Chain! Explore the roots and connections behind your favorite artists through a retro record-shelf puzzle game. Discover how legendary musicians influenced each other across generations and genres.</span>
+            <span class="lang-zh-Hans">感谢下载 Music Influence Chain！通过复古唱片架解谜游戏，探索你喜爱的艺术家之间的根源与联系。发现传奇音乐人如何跨越世代与流派相互影响。</span>
+            <span class="lang-zh-Hant">感謝下載 Music Influence Chain！透過復古唱片架解謎遊戲，探索你喜愛的藝術家之間的根源與聯繫。發現傳奇音樂人如何跨越世代與流派相互影響。</span>
+            <span class="lang-ko">Music Influence Chain을 다운로드해 주셔서 감사합니다! 레트로 레코드 선반 퍼즐 게임으로 좋아하는 아티스트의 뿌리와 연결 고리를 탐험하세요. 전설적인 뮤지션들이 세대와 장르를 넘어 어떻게 서로 영향을 주고받았는지 발견해 보세요.</span>
+            <span class="lang-es">¡Gracias por descargar Music Influence Chain! Explora las raíces y conexiones de tus artistas favoritos a través de un juego de puzle con estética retro de estantería de discos. Descubre cómo los músicos legendarios se influyeron mutuamente a lo largo de generaciones y géneros.</span>
+          </p>
+        </div>
+        <div class="news-item">
+          <div class="news-meta">
+            <span class="news-date">2026-06-29</span>
+            <span class="news-category">UPDATE</span>
+          </div>
+          <h3 class="news-title">
+            <span class="lang-ja">J-Rock &amp; Pop Pack vol.1 配信開始！</span>
+            <span class="lang-en">J-Rock &amp; Pop Pack vol.1 — Now Available!</span>
+            <span class="lang-zh-Hans">J-Rock &amp; Pop Pack vol.1 现已推出！</span>
+            <span class="lang-zh-Hant">J-Rock &amp; Pop Pack vol.1 現已推出！</span>
+            <span class="lang-ko">J-Rock &amp; Pop Pack vol.1 출시!</span>
+            <span class="lang-es">¡J-Rock &amp; Pop Pack vol.1 ya disponible!</span>
+          </h3>
+          <p class="news-body">
+            <span class="lang-ja">初の DLC パックが登場！X JAPAN、B'z、Mr.Children、YOASOBI など 197 組以上の日本のロック・ポップアーティストをアンロックできます。J-Rock・J-Pop のルーツを深く探求しましょう！</span>
+            <span class="lang-en">The first DLC pack is here! Unlock 197 Japanese rock and pop artists including X JAPAN, B'z, Mr.Children, YOASOBI, and many more. Dive deep into the roots of J-Rock and J-Pop!</span>
+            <span class="lang-zh-Hans">首个 DLC 包来了！解锁 197 位日本摇滚和流行艺术家，包括 X JAPAN、B'z、Mr.Children、YOASOBI 等。深入探索 J-Rock 和 J-Pop 的根源！</span>
+            <span class="lang-zh-Hant">首個 DLC 包來了！解鎖 197 位日本搖滾和流行藝術家，包括 X JAPAN、B'z、Mr.Children、YOASOBI 等。深入探索 J-Rock 和 J-Pop 的根源！</span>
+            <span class="lang-ko">첫 번째 DLC 팩 출시! X JAPAN, B'z, Mr.Children, YOASOBI 등 197명 이상의 일본 록·팝 아티스트를 잠금 해제하세요. J-Rock과 J-Pop의 뿌리를 깊이 탐험해 보세요!</span>
+            <span class="lang-es">¡El primer paquete DLC ya está aquí! Desbloquea 197 artistas de rock y pop japonés, incluyendo X JAPAN, B'z, Mr.Children, YOASOBI y muchos más. ¡Sumérgete en las raíces del J-Rock y J-Pop!</span>
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -250,6 +533,10 @@
         <h2>
           <span class="lang-ja">よくある質問</span>
           <span class="lang-en">Frequently asked questions</span>
+          <span class="lang-zh-Hans">常见问题</span>
+          <span class="lang-zh-Hant">常見問題</span>
+          <span class="lang-ko">자주 묻는 질문</span>
+          <span class="lang-es">Preguntas frecuentes</span>
         </h2>
       </div>
       <div class="faq reveal">
@@ -257,50 +544,90 @@
           <summary>
             <span class="lang-ja">料金はかかりますか？</span>
             <span class="lang-en">Is the app free?</span>
+            <span class="lang-zh-Hans">需要付费吗？</span>
+            <span class="lang-zh-Hant">需要付費嗎？</span>
+            <span class="lang-ko">요금이 있나요?</span>
+            <span class="lang-es">¿Es gratis?</span>
           </summary>
           <div class="ans">
-            <span class="lang-ja">基本プレイは無料です。すべてのモードを気軽にお楽しみいただけます。</span>
-            <span class="lang-en">Core gameplay is free, and all modes are available to enjoy right away.</span>
+            <span class="lang-ja">75アーティストのコアコンテンツは無料でお楽しみいただけます。本編アンロック（¥600）で本編アーティスト計820以上にアクセスできます。さらに追加DLCパックで、テーマ別のアーティストも配信中です。</span>
+            <span class="lang-en">You can enjoy core content with 75 artists for free. The Full Game Unlock (¥600) gives you access to over 820 main artists. Additional DLC packs with themed artists are also available.</span>
+            <span class="lang-zh-Hans">75位艺术家的核心内容可免费畅玩。本篇解锁（¥600）可访问820+位主线艺术家。另有主题DLC包提供更多艺术家。</span>
+            <span class="lang-zh-Hant">75位藝術家的核心內容可免費暢玩。本篇解鎖（¥600）可存取820+位主線藝術家。另有主題DLC包提供更多藝術家。</span>
+            <span class="lang-ko">75명의 아티스트로 구성된 코어 콘텐츠는 무료입니다. 본편 잠금 해제（¥600）로 820명 이상의 메인 아티스트에 접근할 수 있습니다. 테마별 추가 DLC 팩도 제공 중입니다.</span>
+            <span class="lang-es">Puedes disfrutar del contenido básico con 75 artistas gratis. El desbloqueo del juego completo (¥600) te da acceso a más de 820 artistas principales. También hay packs DLC temáticos con más artistas disponibles.</span>
           </div>
         </details>
         <details>
           <summary>
             <span class="lang-ja">クイズのデータはどこから来ていますか？</span>
             <span class="lang-en">Where does the quiz data come from?</span>
+            <span class="lang-zh-Hans">问答数据来自哪里？</span>
+            <span class="lang-zh-Hant">問答資料來自哪裡？</span>
+            <span class="lang-ko">퀴즈 데이터는 어디에서 오나요?</span>
+            <span class="lang-es">¿De dónde provienen los datos?</span>
           </summary>
           <div class="ans">
             <span class="lang-ja">アーティスト情報や画像は Wikipedia / Wikimedia Commons の記述をもとに構成しています。影響関係も Wikipedia の記述を確認元として参考にしています。</span>
             <span class="lang-en">Artist information and images are based on Wikipedia and Wikimedia Commons. Influence relationships also reference descriptions on Wikipedia as their source.</span>
+            <span class="lang-zh-Hans">艺术家信息和图片基于维基百科和维基共享资源。影响关系也参考维基百科的记述。</span>
+            <span class="lang-zh-Hant">藝術家資訊和圖片基於維基百科和維基共享資源。影響關係也參考維基百科的記述。</span>
+            <span class="lang-ko">아티스트 정보와 이미지는 위키백과와 위키미디어 공용을 기반으로 합니다. 영향 관계도 위키백과의 기술을 참고합니다.</span>
+            <span class="lang-es">La información y las imágenes de los artistas se basan en Wikipedia y Wikimedia Commons. Las relaciones de influencia también se basan en descripciones de Wikipedia.</span>
           </div>
         </details>
         <details>
           <summary>
-            <span class="lang-ja">言語は切り替えられますか？</span>
-            <span class="lang-en">Can I change the language?</span>
+            <span class="lang-ja">対応言語は？</span>
+            <span class="lang-en">What languages are supported?</span>
+            <span class="lang-zh-Hans">支持哪些语言？</span>
+            <span class="lang-zh-Hant">支援哪些語言？</span>
+            <span class="lang-ko">지원 언어는?</span>
+            <span class="lang-es">¿Qué idiomas admite?</span>
           </summary>
           <div class="ans">
-            <span class="lang-ja">はい。アプリの設定画面、およびこのサイト右上の切り替えから日本語・英語を選べます。</span>
-            <span class="lang-en">Yes. You can switch between Japanese and English from the app's settings screen, and from the toggle at the top right of this site.</span>
+            <span class="lang-ja">日本語・英語・簡体字中国語・繁体字中国語・韓国語・スペイン語の6言語に対応しています。アプリの設定画面から切り替えられます。</span>
+            <span class="lang-en">The app supports six languages: Japanese, English, Simplified Chinese, Traditional Chinese, Korean, and Spanish. You can switch from the app's settings screen.</span>
+            <span class="lang-zh-Hans">支持日语、英语、简体中文、繁体中文、韩语和西班牙语6种语言。可在应用设置中切换。</span>
+            <span class="lang-zh-Hant">支援日語、英語、簡體中文、繁體中文、韓語和西班牙語6種語言。可在應用程式設定中切換。</span>
+            <span class="lang-ko">일본어, 영어, 간체 중국어, 번체 중국어, 한국어, 스페인어 6개 언어를 지원합니다. 앱 설정에서 전환할 수 있습니다.</span>
+            <span class="lang-es">La app admite seis idiomas: japonés, inglés, chino simplificado, chino tradicional, coreano y español. Puedes cambiar desde la pantalla de ajustes.</span>
           </div>
         </details>
         <details>
           <summary>
             <span class="lang-ja">音楽が再生されるアプリですか？</span>
             <span class="lang-en">Does the app play music?</span>
+            <span class="lang-zh-Hans">可以播放音乐吗？</span>
+            <span class="lang-zh-Hant">可以播放音樂嗎？</span>
+            <span class="lang-ko">음악을 재생하는 앱인가요?</span>
+            <span class="lang-es">¿La app reproduce música?</span>
           </summary>
           <div class="ans">
             <span class="lang-ja">楽曲そのものを再生するアプリではありません。アーティスト同士の影響関係を「クイズ」として楽しむアプリです。</span>
             <span class="lang-en">It doesn't stream songs themselves. It's a game for enjoying the influence relationships between artists as a quiz.</span>
+            <span class="lang-zh-Hans">本应用不播放歌曲。它是一款以问答形式享受艺术家之间影响关系的游戏应用。</span>
+            <span class="lang-zh-Hant">本應用程式不播放歌曲。它是一款以問答形式享受藝術家之間影響關係的遊戲應用。</span>
+            <span class="lang-ko">음악 자체를 재생하는 앱이 아닙니다. 아티스트 간의 영향 관계를 퀴즈로 즐기는 앱입니다.</span>
+            <span class="lang-es">No reproduce canciones. Es un juego para disfrutar de las relaciones de influencia entre artistas como un quiz.</span>
           </div>
         </details>
         <details>
           <summary>
             <span class="lang-ja">不具合の報告や要望はどこへ？</span>
             <span class="lang-en">How do I report a bug or request a feature?</span>
+            <span class="lang-zh-Hans">如何报告错误或提出建议？</span>
+            <span class="lang-zh-Hant">如何回報錯誤或提出建議？</span>
+            <span class="lang-ko">버그 신고나 요청은 어떻게?</span>
+            <span class="lang-es">¿Cómo reporto un error o solicito una función?</span>
           </summary>
           <div class="ans">
             <span class="lang-ja">下記のお問い合わせフォームよりお気軽にお寄せください。<a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">お問い合わせフォームを開く</a></span>
             <span class="lang-en">Please send anything via our contact form. <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">Open the contact form</a></span>
+            <span class="lang-zh-Hans">请通过以下联系表单随时反馈。<a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">打开联系表单</a></span>
+            <span class="lang-zh-Hant">請透過以下聯絡表單隨時反饋。<a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">打開聯絡表單</a></span>
+            <span class="lang-ko">아래 문의 양식을 통해 편하게 보내주세요. <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">문의 양식 열기</a></span>
+            <span class="lang-es">Envíanos lo que quieras a través de nuestro formulario de contacto. <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">Abrir formulario de contacto</a></span>
           </div>
         </details>
       </div>
@@ -313,15 +640,27 @@
       <h2>
         <span class="lang-ja">ご意見・お問い合わせ</span>
         <span class="lang-en">Questions or feedback?</span>
+        <span class="lang-zh-Hans">意见与反馈</span>
+        <span class="lang-zh-Hant">意見與反饋</span>
+        <span class="lang-ko">의견 및 문의</span>
+        <span class="lang-es">¿Preguntas o comentarios?</span>
       </h2>
       <p>
         <span class="lang-ja">アプリへのご感想、不具合のご報告、収録してほしいアーティストのリクエストなど、お気軽にお寄せください。</span>
         <span class="lang-en">We'd love to hear your impressions, bug reports, or requests for artists you'd like to see added.</span>
+        <span class="lang-zh-Hans">欢迎告诉我们你对应用的感想、错误报告，或希望收录的艺术家。</span>
+        <span class="lang-zh-Hant">歡迎告訴我們你對應用程式的感想、錯誤報告，或希望收錄的藝術家。</span>
+        <span class="lang-ko">앱에 대한 감상, 버그 신고, 추가하고 싶은 아티스트 요청 등 편하게 보내주세요.</span>
+        <span class="lang-es">Nos encantaría conocer tus impresiones, informes de errores o solicitudes de artistas que te gustaría ver añadidos.</span>
       </p>
       <a class="btn btn-primary" href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
         <span class="lang-ja">お問い合わせフォームへ</span>
         <span class="lang-en">Open the contact form</span>
+        <span class="lang-zh-Hans">打开联系表单</span>
+        <span class="lang-zh-Hant">打開聯絡表單</span>
+        <span class="lang-ko">문의 양식 열기</span>
+        <span class="lang-es">Abrir formulario de contacto</span>
       </a>
     </div>
   </section>
@@ -337,21 +676,96 @@
             <p class="ft-desc">
               <span class="lang-ja">レコード棚から音楽のルーツをたどる、影響の連鎖の音楽クイズ。</span>
               <span class="lang-en">A music quiz tracing the chain of influence, from the record shelf to the roots.</span>
+              <span class="lang-zh-Hans">从唱片架追溯音乐根源的影响链音乐问答。</span>
+              <span class="lang-zh-Hant">從唱片架追溯音樂根源的影響鏈音樂問答。</span>
+              <span class="lang-ko">레코드 선반에서 음악의 뿌리를 따라가는, 영향의 연쇄 음악 퀴즈.</span>
+              <span class="lang-es">Un quiz musical que rastrea la cadena de influencia, desde la estantería de discos hasta las raíces.</span>
             </p>
           </div>
         </div>
         <div class="footer-col">
-          <h4><span class="lang-ja">メニュー</span><span class="lang-en">Explore</span></h4>
-          <a href="#about"><span class="lang-ja">アプリについて</span><span class="lang-en">About</span></a>
-          <a href="#modes"><span class="lang-ja">モード</span><span class="lang-en">Modes</span></a>
-          <a href="#how"><span class="lang-ja">遊び方</span><span class="lang-en">How it works</span></a>
-          <a href="#faq"><span class="lang-ja">FAQ</span><span class="lang-en">FAQ</span></a>
+          <h4>
+            <span class="lang-ja">メニュー</span>
+            <span class="lang-en">Explore</span>
+            <span class="lang-zh-Hans">菜单</span>
+            <span class="lang-zh-Hant">選單</span>
+            <span class="lang-ko">메뉴</span>
+            <span class="lang-es">Menú</span>
+          </h4>
+          <a href="#about">
+            <span class="lang-ja">アプリについて</span>
+            <span class="lang-en">About</span>
+            <span class="lang-zh-Hans">关于应用</span>
+            <span class="lang-zh-Hant">關於應用</span>
+            <span class="lang-ko">앱 소개</span>
+            <span class="lang-es">Acerca de</span>
+          </a>
+          <a href="#modes">
+            <span class="lang-ja">モード</span>
+            <span class="lang-en">Modes</span>
+            <span class="lang-zh-Hans">模式</span>
+            <span class="lang-zh-Hant">模式</span>
+            <span class="lang-ko">모드</span>
+            <span class="lang-es">Modos</span>
+          </a>
+          <a href="#how">
+            <span class="lang-ja">遊び方</span>
+            <span class="lang-en">How it works</span>
+            <span class="lang-zh-Hans">玩法</span>
+            <span class="lang-zh-Hant">玩法</span>
+            <span class="lang-ko">플레이 방법</span>
+            <span class="lang-es">Cómo jugar</span>
+          </a>
+          <a href="#faq">
+            <span class="lang-ja">FAQ</span>
+            <span class="lang-en">FAQ</span>
+            <span class="lang-zh-Hans">FAQ</span>
+            <span class="lang-zh-Hant">FAQ</span>
+            <span class="lang-ko">FAQ</span>
+            <span class="lang-es">FAQ</span>
+          </a>
+          <a href="https://apps.apple.com/jp/app/%E9%9F%B3%E6%A5%BD%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%84%E3%82%92%E3%83%87%E3%82%A3%E3%82%B0%E3%82%8B-roots/id6773954689" target="_blank" rel="noopener">
+            <span class="lang-ja">App Store</span>
+            <span class="lang-en">App Store</span>
+            <span class="lang-zh-Hans">App Store</span>
+            <span class="lang-zh-Hant">App Store</span>
+            <span class="lang-ko">App Store</span>
+            <span class="lang-es">App Store</span>
+          </a>
         </div>
         <div class="footer-col">
-          <h4><span class="lang-ja">サポート・規約</span><span class="lang-en">Support &amp; Legal</span></h4>
-          <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener"><span class="lang-ja">お問い合わせ</span><span class="lang-en">Contact</span></a>
-          <a href="terms.html"><span class="lang-ja">利用規約</span><span class="lang-en">Terms of Service</span></a>
-          <a href="privacy.html"><span class="lang-ja">プライバシーポリシー</span><span class="lang-en">Privacy Policy</span></a>
+          <h4>
+            <span class="lang-ja">サポート・規約</span>
+            <span class="lang-en">Support &amp; Legal</span>
+            <span class="lang-zh-Hans">支持与条款</span>
+            <span class="lang-zh-Hant">支援與條款</span>
+            <span class="lang-ko">지원 및 약관</span>
+            <span class="lang-es">Soporte y legal</span>
+          </h4>
+          <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">
+            <span class="lang-ja">お問い合わせ</span>
+            <span class="lang-en">Contact</span>
+            <span class="lang-zh-Hans">联系我们</span>
+            <span class="lang-zh-Hant">聯絡我們</span>
+            <span class="lang-ko">문의</span>
+            <span class="lang-es">Contacto</span>
+          </a>
+          <a href="terms.html">
+            <span class="lang-ja">利用規約</span>
+            <span class="lang-en">Terms of Service</span>
+            <span class="lang-zh-Hans">使用条款</span>
+            <span class="lang-zh-Hant">使用條款</span>
+            <span class="lang-ko">이용약관</span>
+            <span class="lang-es">Términos de servicio</span>
+          </a>
+          <a href="privacy.html">
+            <span class="lang-ja">プライバシーポリシー</span>
+            <span class="lang-en">Privacy Policy</span>
+            <span class="lang-zh-Hans">隐私政策</span>
+            <span class="lang-zh-Hant">隱私權政策</span>
+            <span class="lang-ko">개인정보처리방침</span>
+            <span class="lang-es">Política de privacidad</span>
+          </a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -359,11 +773,15 @@
         <span>
           <span class="lang-ja">画像・データは Wikipedia / Wikimedia Commons より取得</span>
           <span class="lang-en">Images &amp; data sourced from Wikipedia / Wikimedia Commons</span>
+          <span class="lang-zh-Hans">图片和数据来自 Wikipedia / Wikimedia Commons</span>
+          <span class="lang-zh-Hant">圖片和資料來自 Wikipedia / Wikimedia Commons</span>
+          <span class="lang-ko">이미지 및 데이터는 Wikipedia / Wikimedia Commons에서 가져옴</span>
+          <span class="lang-es">Imágenes y datos de Wikipedia / Wikimedia Commons</span>
         </span>
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/i18n.js?v=2"></script>
+  <script src="assets/js/i18n.js?v=3"></script>
 </body>
 </html>
