@@ -8,12 +8,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <link rel="stylesheet" href="assets/css/style.css?v=3" />
 </head>
-<body data-title-ja="プライバシーポリシー — Music Influence Chain" data-title-en="Privacy Policy — Music Influence Chain">
+<body
+  data-title-ja="プライバシーポリシー — Music Influence Chain"
+  data-title-en="Privacy Policy — Music Influence Chain"
+  data-title-zh-Hans="隐私政策 — Music Influence Chain"
+  data-title-zh-Hant="隱私權政策 — Music Influence Chain"
+  data-title-ko="개인정보처리방침 — Music Influence Chain"
+  data-title-es="Política de Privacidad — Music Influence Chain"
+>
   <div class="bg-ambient"></div>
   <div class="bg-grain"></div>
 
+  <!-- ============ Header ============ -->
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="index.html">
@@ -21,14 +29,59 @@
         <span class="brand-name"><b>Music</b><br />Influence Chain</span>
       </a>
       <nav class="nav">
-        <a href="index.html#about"><span class="lang-ja">アプリについて</span><span class="lang-en">About</span></a>
-        <a href="index.html#faq"><span class="lang-ja">FAQ</span><span class="lang-en">FAQ</span></a>
-        <a href="terms.html"><span class="lang-ja">利用規約</span><span class="lang-en">Terms</span></a>
-        <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener"><span class="lang-ja">お問い合わせ</span><span class="lang-en">Contact</span></a>
+        <a href="index.html#about">
+          <span class="lang-ja">アプリについて</span>
+          <span class="lang-en">About</span>
+          <span class="lang-zh-Hans">关于应用</span>
+          <span class="lang-zh-Hant">關於應用</span>
+          <span class="lang-ko">앱 소개</span>
+          <span class="lang-es">Acerca de</span>
+        </a>
+        <a href="index.html#modes">
+          <span class="lang-ja">モード</span>
+          <span class="lang-en">Modes</span>
+          <span class="lang-zh-Hans">模式</span>
+          <span class="lang-zh-Hant">模式</span>
+          <span class="lang-ko">모드</span>
+          <span class="lang-es">Modos</span>
+        </a>
+        <a href="index.html#how">
+          <span class="lang-ja">遊び方</span>
+          <span class="lang-en">How it works</span>
+          <span class="lang-zh-Hans">玩法</span>
+          <span class="lang-zh-Hant">玩法</span>
+          <span class="lang-ko">플레이 방법</span>
+          <span class="lang-es">Cómo jugar</span>
+        </a>
+        <a href="index.html#faq">
+          <span class="lang-ja">FAQ</span>
+          <span class="lang-en">FAQ</span>
+          <span class="lang-zh-Hans">FAQ</span>
+          <span class="lang-zh-Hant">FAQ</span>
+          <span class="lang-ko">FAQ</span>
+          <span class="lang-es">FAQ</span>
+        </a>
+        <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">
+          <span class="lang-ja">お問い合わせ</span>
+          <span class="lang-en">Contact</span>
+          <span class="lang-zh-Hans">联系我们</span>
+          <span class="lang-zh-Hant">聯絡我們</span>
+          <span class="lang-ko">문의</span>
+          <span class="lang-es">Contacto</span>
+        </a>
       </nav>
       <div class="lang-switch" role="group" aria-label="Language">
-        <button data-lang="ja" type="button">日本語</button>
-        <button data-lang="en" type="button">EN</button>
+        <button class="lang-toggle" type="button">
+          <span class="lang-current">日本語</span>
+        </button>
+        <div class="lang-dropdown">
+          <button data-lang="ja" type="button">日本語</button>
+          <button data-lang="en" type="button">English</button>
+          <button data-lang="zh-Hans" type="button">简体中文</button>
+          <button data-lang="zh-Hant" type="button">繁體中文</button>
+          <button data-lang="ko" type="button">한국어</button>
+          <button data-lang="es" type="button">Español</button>
+        </div>
       </div>
     </div>
   </header>
@@ -37,114 +90,373 @@
     <div class="wrap">
       <a class="back" href="index.html">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
-        <span class="lang-ja">トップに戻る</span><span class="lang-en">Back to home</span>
+        <span class="lang-ja">トップに戻る</span>
+        <span class="lang-en">Back to home</span>
+        <span class="lang-zh-Hans">返回首页</span>
+        <span class="lang-zh-Hant">返回首頁</span>
+        <span class="lang-ko">홈으로 돌아가기</span>
+        <span class="lang-es">Volver al inicio</span>
       </a>
 
       <!-- ===== Japanese ===== -->
       <div class="lang-ja">
         <h1>プライバシーポリシー</h1>
-        <p class="updated">最終更新日：2026年5月29日</p>
+        <p class="updated">最終更新日：2026年6月30日</p>
 
-        <p>Music Influence Chain（以下「本アプリ」）の運営者は、利用者のプライバシーを尊重し、個人情報の保護に努めます。本プライバシーポリシーは、本アプリにおける情報の取り扱いについて説明するものです。</p>
+        <p>Music Influence Chain（以下「本アプリ」）は、利用者のプライバシーを尊重します。本ポリシーは、本アプリにおいてどのような情報が収集され、どのように利用されるかについて説明するものです。</p>
 
         <h2>1. 収集する情報</h2>
-        <p>本アプリは、原則として利用者を個人として特定できる情報を収集しません。以下の情報を端末内またはサービス上で取り扱う場合があります。</p>
+        <p>本アプリは、以下のとおり情報を取り扱います。</p>
         <ul>
-          <li><strong>端末内に保存される設定・進行データ：</strong>言語設定、スコア、プレイ履歴などは、原則として利用者の端末内に保存されます。</li>
-          <li><strong>Game Center 連携（任意）：</strong>ランキング機能を利用する場合、Apple の Game Center を通じてスコア等が処理されます。これは Apple のプライバシーポリシーに従います。</li>
-          <li><strong>お問い合わせ情報：</strong>お問い合わせフォーム（Google フォーム）をご利用の際に入力された内容。これは Google のプライバシーポリシーに従って処理されます。</li>
+          <li><strong>端末内のみで保存される情報（サーバーには送信されません）：</strong>ゲーム内設定、お気に入り、スコア、プレイ履歴などは、利用者の端末内にのみ保存されます。</li>
+          <li><strong>Supabase（読み取り専用）：</strong>本アプリは、アーティストデータ・クイズデータ・お知らせ情報を Supabase のサーバーから取得します。Supabase へ個人情報が送信されることはありません。</li>
+          <li><strong>RevenueCat：</strong>本編アンロックや DLC パックなどのアプリ内購入は、RevenueCat を通じて管理されています。購入処理は利用者の Apple ID を通じて行われます。本アプリは RevenueCat を通じて個人情報を直接収集することはありません。</li>
+          <li><strong>Apple Game Center：</strong>ランキング機能のために Game Center をご利用いただく場合、当該データは Apple の Game Center プライバシーポリシーに従って取り扱われます。</li>
+          <li><strong>Google フォーム（お問い合わせ）：</strong>お問い合わせフォームよりご連絡いただいた場合、Google フォームが入力内容を収集します。</li>
         </ul>
 
-        <h2>2. 利用目的</h2>
+        <h2>2. 第三者サービス</h2>
+        <p>本アプリおよび本サイトは、以下の第三者サービスを利用しています。各サービスにおける情報の取り扱いは、それぞれの提供者のプライバシーポリシーに従います。</p>
         <ul>
-          <li>本アプリの提供・維持・改善のため</li>
-          <li>お問い合わせへの対応のため</li>
-          <li>不具合の調査および品質向上のため</li>
+          <li>Apple Game Center — <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">https://www.apple.com/privacy/</a></li>
+          <li>Supabase — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">https://supabase.com/privacy</a></li>
+          <li>RevenueCat — <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
+          <li>Google フォーム — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+          <li>Wikipedia / Wikimedia Commons — <a href="https://foundation.wikimedia.org/wiki/Privacy_policy" target="_blank" rel="noopener">https://foundation.wikimedia.org/wiki/Privacy_policy</a></li>
         </ul>
 
-        <h2>3. 第三者サービス</h2>
-        <p>本アプリおよび本サイトは、以下の第三者サービスを利用する場合があります。各サービスにおける情報の取り扱いは、それぞれの提供者のプライバシーポリシーに従います。</p>
-        <ul>
-          <li>Apple Game Center（ランキング機能）</li>
-          <li>Google フォーム（お問い合わせ）</li>
-          <li>Wikipedia / Wikimedia Commons（コンテンツの出典）</li>
-        </ul>
+        <h2>3. データの保護</h2>
+        <p>端末内に保存されるデータは、外部へ送信されることなくローカルに保存されます。Supabase との通信は HTTPS による暗号化を使用しています。</p>
 
-        <h2>4. 第三者への提供</h2>
-        <p>運営者は、法令に基づく場合を除き、利用者の情報を本人の同意なく第三者に提供することはありません。</p>
+        <h2>4. お子様のプライバシー</h2>
+        <p>本アプリは、13歳未満のお子様から個人情報を意図的に収集することはありません。</p>
 
-        <h2>5. お子様のプライバシー</h2>
-        <p>本アプリは、個人を特定する情報の収集を意図的に行いません。お子様が利用される場合も、保護者の方が安心してご利用いただける設計を心がけています。</p>
+        <h2>5. 変更について</h2>
+        <p>本ポリシーは、必要に応じて改定されることがあります。変更があった場合は、本ページにて更新内容をお知らせします。</p>
 
-        <h2>6. ポリシーの変更</h2>
-        <p>本ポリシーは、必要に応じて改定されることがあります。重要な変更がある場合は、本アプリまたは本サイト上でお知らせします。</p>
-
-        <h2>7. お問い合わせ</h2>
+        <h2>6. お問い合わせ</h2>
         <p>本プライバシーポリシーに関するご質問は、<a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">お問い合わせフォーム</a>よりご連絡ください。</p>
-
-        <div class="note">本ページは一般的なひな形です。実際の公開にあたっては、運営者名・収集する情報の実態に合わせて内容をご確認・修正のうえご利用ください。</div>
       </div>
 
       <!-- ===== English ===== -->
       <div class="lang-en">
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: May 29, 2026</p>
+        <p class="updated">Last updated: June 30, 2026</p>
 
-        <p>The operator of Music Influence Chain (the "App") respects users' privacy and is committed to protecting personal information. This Privacy Policy explains how information is handled in the App.</p>
+        <p>Music Influence Chain (the "App") respects the privacy of its users. This Privacy Policy explains what information is collected and how it is used within the App.</p>
 
         <h2>1. Information We Collect</h2>
-        <p>As a rule, the App does not collect information that personally identifies users. The following information may be handled on your device or within the service:</p>
+        <p>The App handles information as follows.</p>
         <ul>
-          <li><strong>Settings &amp; progress stored on your device:</strong> language preference, scores, and play history are, as a rule, stored locally on your device.</li>
-          <li><strong>Game Center integration (optional):</strong> if you use the ranking feature, scores and similar data are processed through Apple's Game Center, in accordance with Apple's privacy policy.</li>
-          <li><strong>Contact information:</strong> any details you enter when using the contact form (a Google Form), processed in accordance with Google's privacy policy.</li>
+          <li><strong>On-device only (never sent to any server):</strong> game settings, favorites, scores, and play history are stored only on your device.</li>
+          <li><strong>Supabase (read-only):</strong> the App retrieves artist data, quiz data, and announcements from Supabase servers. No personal information is ever sent to Supabase.</li>
+          <li><strong>RevenueCat:</strong> in-app purchases such as the Full Game Unlock and DLC packs are managed through RevenueCat. Purchase transactions are processed via your Apple ID. The App does not directly collect personal information through RevenueCat.</li>
+          <li><strong>Apple Game Center:</strong> if you choose to use Game Center for leaderboards and rankings, that data is handled in accordance with Apple's Game Center privacy policy.</li>
+          <li><strong>Google Forms (Contact):</strong> if you contact us via the feedback form, Google Forms collects the information you submit.</li>
         </ul>
 
-        <h2>2. Purpose of Use</h2>
+        <h2>2. Third-Party Services</h2>
+        <p>The App and this site use the following third-party services. Information handling for each service follows that provider's own privacy policy.</p>
         <ul>
-          <li>To provide, maintain, and improve the App;</li>
-          <li>To respond to inquiries;</li>
-          <li>To investigate issues and improve quality.</li>
+          <li>Apple Game Center — <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">https://www.apple.com/privacy/</a></li>
+          <li>Supabase — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">https://supabase.com/privacy</a></li>
+          <li>RevenueCat — <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
+          <li>Google Forms — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+          <li>Wikipedia / Wikimedia Commons — <a href="https://foundation.wikimedia.org/wiki/Privacy_policy" target="_blank" rel="noopener">https://foundation.wikimedia.org/wiki/Privacy_policy</a></li>
         </ul>
 
-        <h2>3. Third-Party Services</h2>
-        <p>The App and this site may use the following third-party services. Information handling in each service follows that provider's own privacy policy.</p>
-        <ul>
-          <li>Apple Game Center (ranking feature)</li>
-          <li>Google Forms (contact)</li>
-          <li>Wikipedia / Wikimedia Commons (content sources)</li>
-        </ul>
+        <h2>3. Data Protection</h2>
+        <p>On-device data is stored locally and is never transmitted externally. Communication with Supabase uses HTTPS encryption.</p>
 
-        <h2>4. Disclosure to Third Parties</h2>
-        <p>Except as required by law, the operator will not provide users' information to third parties without consent.</p>
+        <h2>4. Children's Privacy</h2>
+        <p>The App does not knowingly collect personal information from children under the age of 13.</p>
 
-        <h2>5. Children's Privacy</h2>
-        <p>The App does not intentionally collect personally identifying information. It is designed so that parents can feel comfortable letting children use it.</p>
+        <h2>5. Changes to This Policy</h2>
+        <p>This policy may be updated from time to time. Any changes will be posted on this page.</p>
 
-        <h2>6. Changes to This Policy</h2>
-        <p>This policy may be revised as needed. If significant changes are made, we will announce them within the App or on this site.</p>
-
-        <h2>7. Contact</h2>
+        <h2>6. Contact</h2>
         <p>For questions about this Privacy Policy, please use the <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">contact form</a>.</p>
+      </div>
 
-        <div class="note">This page is a general template. Before publishing, please review and adjust the details to match your operator name and the information you actually collect.</div>
+      <!-- ===== Simplified Chinese ===== -->
+      <div class="lang-zh-Hans">
+        <h1>隐私政策</h1>
+        <p class="updated">最后更新日期：2026年6月30日</p>
+
+        <p>Music Influence Chain（以下简称"本应用"）尊重用户的隐私。本政策说明本应用收集哪些信息以及如何使用这些信息。</p>
+
+        <h2>1. 我们收集的信息</h2>
+        <p>本应用按以下方式处理信息。</p>
+        <ul>
+          <li><strong>仅保存在设备本地（不会发送到服务器）：</strong>游戏设置、收藏、分数和游玩记录仅保存在您的设备本地。</li>
+          <li><strong>Supabase（仅读取）：</strong>本应用从 Supabase 服务器获取艺术家数据、问答数据和公告信息。不会向 Supabase 发送任何个人信息。</li>
+          <li><strong>RevenueCat：</strong>本篇解锁和 DLC 包等应用内购买通过 RevenueCat 进行管理。购买交易通过您的 Apple ID 处理。本应用不会通过 RevenueCat 直接收集个人信息。</li>
+          <li><strong>Apple Game Center：</strong>如果您选择使用 Game Center 进行排行榜功能，相关数据将依据 Apple 的 Game Center 隐私政策进行处理。</li>
+          <li><strong>Google 表单（联系我们）：</strong>如果您通过反馈表单与我们联系，Google 表单会收集您提交的信息。</li>
+        </ul>
+
+        <h2>2. 第三方服务</h2>
+        <p>本应用及本网站使用以下第三方服务。各服务的信息处理方式依据其各自的隐私政策。</p>
+        <ul>
+          <li>Apple Game Center — <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">https://www.apple.com/privacy/</a></li>
+          <li>Supabase — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">https://supabase.com/privacy</a></li>
+          <li>RevenueCat — <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
+          <li>Google 表单 — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+          <li>Wikipedia / Wikimedia Commons — <a href="https://foundation.wikimedia.org/wiki/Privacy_policy" target="_blank" rel="noopener">https://foundation.wikimedia.org/wiki/Privacy_policy</a></li>
+        </ul>
+
+        <h2>3. 数据保护</h2>
+        <p>设备本地数据仅保存在本地，不会对外传输。与 Supabase 的通信使用 HTTPS 加密。</p>
+
+        <h2>4. 儿童隐私</h2>
+        <p>本应用不会在知情的情况下收集13岁以下儿童的个人信息。</p>
+
+        <h2>5. 政策变更</h2>
+        <p>本政策可能会不时更新。如有变更，将在本页面公布。</p>
+
+        <h2>6. 联系我们</h2>
+        <p>如对本隐私政策有任何疑问，请通过<a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">联系表单</a>与我们联系。</p>
+      </div>
+
+      <!-- ===== Traditional Chinese ===== -->
+      <div class="lang-zh-Hant">
+        <h1>隱私權政策</h1>
+        <p class="updated">最後更新日期：2026年6月30日</p>
+
+        <p>Music Influence Chain（以下簡稱「本應用程式」）尊重使用者的隱私。本政策說明本應用程式收集哪些資訊以及如何使用這些資訊。</p>
+
+        <h2>1. 我們收集的資訊</h2>
+        <p>本應用程式按以下方式處理資訊。</p>
+        <ul>
+          <li><strong>僅保存在裝置本機（不會傳送至伺服器）：</strong>遊戲設定、收藏、分數和遊玩記錄僅保存在您的裝置本機。</li>
+          <li><strong>Supabase（僅讀取）：</strong>本應用程式從 Supabase 伺服器取得藝術家資料、問答資料和公告資訊。不會向 Supabase 傳送任何個人資訊。</li>
+          <li><strong>RevenueCat：</strong>本篇解鎖和 DLC 包等應用程式內購買透過 RevenueCat 進行管理。購買交易透過您的 Apple ID 處理。本應用程式不會透過 RevenueCat 直接收集個人資訊。</li>
+          <li><strong>Apple Game Center：</strong>如果您選擇使用 Game Center 進行排行榜功能，相關資料將依據 Apple 的 Game Center 隱私權政策進行處理。</li>
+          <li><strong>Google 表單（聯絡我們）：</strong>如果您透過意見回饋表單與我們聯絡，Google 表單會收集您提交的資訊。</li>
+        </ul>
+
+        <h2>2. 第三方服務</h2>
+        <p>本應用程式及本網站使用以下第三方服務。各服務的資訊處理方式依據其各自的隱私權政策。</p>
+        <ul>
+          <li>Apple Game Center — <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">https://www.apple.com/privacy/</a></li>
+          <li>Supabase — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">https://supabase.com/privacy</a></li>
+          <li>RevenueCat — <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
+          <li>Google 表單 — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+          <li>Wikipedia / Wikimedia Commons — <a href="https://foundation.wikimedia.org/wiki/Privacy_policy" target="_blank" rel="noopener">https://foundation.wikimedia.org/wiki/Privacy_policy</a></li>
+        </ul>
+
+        <h2>3. 資料保護</h2>
+        <p>裝置本機資料僅保存在本機，不會對外傳輸。與 Supabase 的通訊使用 HTTPS 加密。</p>
+
+        <h2>4. 兒童隱私</h2>
+        <p>本應用程式不會在知情的情況下收集13歲以下兒童的個人資訊。</p>
+
+        <h2>5. 政策變更</h2>
+        <p>本政策可能會不時更新。如有變更，將於本頁面公佈。</p>
+
+        <h2>6. 聯絡我們</h2>
+        <p>如對本隱私權政策有任何疑問，請透過<a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">聯絡表單</a>與我們聯絡。</p>
+      </div>
+
+      <!-- ===== Korean ===== -->
+      <div class="lang-ko">
+        <h1>개인정보처리방침</h1>
+        <p class="updated">최종 수정일: 2026년 6월 30일</p>
+
+        <p>Music Influence Chain(이하 "본 앱")은 이용자의 개인정보를 존중합니다. 본 방침은 본 앱이 어떤 정보를 수집하고 어떻게 사용하는지 설명합니다.</p>
+
+        <h2>1. 수집하는 정보</h2>
+        <p>본 앱은 다음과 같이 정보를 처리합니다.</p>
+        <ul>
+          <li><strong>기기 내에만 저장(서버로 전송되지 않음):</strong> 게임 설정, 즐겨찾기, 점수, 플레이 기록은 이용자의 기기 내에만 저장됩니다.</li>
+          <li><strong>Supabase(읽기 전용):</strong> 본 앱은 Supabase 서버로부터 아티스트 데이터, 퀴즈 데이터, 공지사항을 가져옵니다. Supabase로 개인정보가 전송되지 않습니다.</li>
+          <li><strong>RevenueCat:</strong> 본편 잠금 해제 및 DLC 팩 등의 인앱 구매는 RevenueCat을 통해 관리됩니다. 구매 거래는 이용자의 Apple ID를 통해 처리됩니다. 본 앱은 RevenueCat을 통해 개인정보를 직접 수집하지 않습니다.</li>
+          <li><strong>Apple Game Center:</strong> 랭킹 기능을 위해 Game Center를 이용하는 경우, 해당 데이터는 Apple의 Game Center 개인정보 보호정책에 따라 처리됩니다.</li>
+          <li><strong>Google 양식(문의):</strong> 문의 양식을 통해 연락하시는 경우, Google 양식이 제출하신 내용을 수집합니다.</li>
+        </ul>
+
+        <h2>2. 제3자 서비스</h2>
+        <p>본 앱과 본 사이트는 다음의 제3자 서비스를 이용합니다. 각 서비스의 정보 처리는 해당 제공업체의 개인정보 보호정책을 따릅니다.</p>
+        <ul>
+          <li>Apple Game Center — <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">https://www.apple.com/privacy/</a></li>
+          <li>Supabase — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">https://supabase.com/privacy</a></li>
+          <li>RevenueCat — <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
+          <li>Google 양식 — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+          <li>Wikipedia / Wikimedia Commons — <a href="https://foundation.wikimedia.org/wiki/Privacy_policy" target="_blank" rel="noopener">https://foundation.wikimedia.org/wiki/Privacy_policy</a></li>
+        </ul>
+
+        <h2>3. 데이터 보호</h2>
+        <p>기기 내 데이터는 로컬에만 저장되며 외부로 전송되지 않습니다. Supabase와의 통신은 HTTPS 암호화를 사용합니다.</p>
+
+        <h2>4. 아동의 개인정보</h2>
+        <p>본 앱은 13세 미만 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+
+        <h2>5. 정책 변경</h2>
+        <p>본 방침은 필요에 따라 변경될 수 있습니다. 변경 사항이 있을 경우 본 페이지에 게시됩니다.</p>
+
+        <h2>6. 문의</h2>
+        <p>본 개인정보처리방침에 관한 문의는 <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">문의 양식</a>을 통해 연락해 주세요.</p>
+      </div>
+
+      <!-- ===== Spanish ===== -->
+      <div class="lang-es">
+        <h1>Política de Privacidad</h1>
+        <p class="updated">Última actualización: 30 de junio de 2026</p>
+
+        <p>Music Influence Chain (la "App") respeta la privacidad de sus usuarios. Esta política explica qué información se recopila y cómo se utiliza dentro de la App.</p>
+
+        <h2>1. Información que recopilamos</h2>
+        <p>La App gestiona la información de la siguiente manera.</p>
+        <ul>
+          <li><strong>Solo en el dispositivo (nunca se envía a ningún servidor):</strong> la configuración del juego, los favoritos, las puntuaciones y el historial de juego se almacenan únicamente en su dispositivo.</li>
+          <li><strong>Supabase (solo lectura):</strong> la App obtiene datos de artistas, datos de quiz y anuncios desde los servidores de Supabase. Nunca se envía información personal a Supabase.</li>
+          <li><strong>RevenueCat:</strong> las compras dentro de la app, como el desbloqueo del juego completo y los paquetes de DLC, se gestionan mediante RevenueCat. Las transacciones de compra se procesan a través de su ID de Apple. La App no recopila información personal directamente a través de RevenueCat.</li>
+          <li><strong>Apple Game Center:</strong> si decide utilizar Game Center para tablas de clasificación y rankings, esos datos se gestionan conforme a la política de privacidad de Game Center de Apple.</li>
+          <li><strong>Google Forms (Contacto):</strong> si nos contacta a través del formulario de comentarios, Google Forms recopila la información que envía.</li>
+        </ul>
+
+        <h2>2. Servicios de terceros</h2>
+        <p>La App y este sitio utilizan los siguientes servicios de terceros. El tratamiento de la información de cada servicio sigue la política de privacidad propia de cada proveedor.</p>
+        <ul>
+          <li>Apple Game Center — <a href="https://www.apple.com/privacy/" target="_blank" rel="noopener">https://www.apple.com/privacy/</a></li>
+          <li>Supabase — <a href="https://supabase.com/privacy" target="_blank" rel="noopener">https://supabase.com/privacy</a></li>
+          <li>RevenueCat — <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">https://www.revenuecat.com/privacy</a></li>
+          <li>Google Forms — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a></li>
+          <li>Wikipedia / Wikimedia Commons — <a href="https://foundation.wikimedia.org/wiki/Privacy_policy" target="_blank" rel="noopener">https://foundation.wikimedia.org/wiki/Privacy_policy</a></li>
+        </ul>
+
+        <h2>3. Protección de datos</h2>
+        <p>Los datos almacenados en el dispositivo se guardan localmente y nunca se transmiten externamente. La comunicación con Supabase utiliza cifrado HTTPS.</p>
+
+        <h2>4. Privacidad de los menores</h2>
+        <p>La App no recopila a sabiendas información personal de niños menores de 13 años.</p>
+
+        <h2>5. Cambios en esta política</h2>
+        <p>Esta política puede actualizarse periódicamente. Cualquier cambio se publicará en esta página.</p>
+
+        <h2>6. Contacto</h2>
+        <p>Si tiene preguntas sobre esta Política de Privacidad, utilice el <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">formulario de contacto</a>.</p>
       </div>
     </div>
   </main>
 
+  <!-- ============ Footer ============ -->
   <footer class="site-footer">
     <div class="wrap">
-      <div class="footer-bottom" style="margin-top:0;border-top:0;">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/logo.png" alt="" />
+          <div>
+            <div class="ft-name">Music Influence Chain</div>
+            <p class="ft-desc">
+              <span class="lang-ja">レコード棚から音楽のルーツをたどる、影響の連鎖の音楽クイズ。</span>
+              <span class="lang-en">A music quiz tracing the chain of influence, from the record shelf to the roots.</span>
+              <span class="lang-zh-Hans">从唱片架追溯音乐根源的影响链音乐问答。</span>
+              <span class="lang-zh-Hant">從唱片架追溯音樂根源的影響鏈音樂問答。</span>
+              <span class="lang-ko">레코드 선반에서 음악의 뿌리를 따라가는, 영향의 연쇄 음악 퀴즈.</span>
+              <span class="lang-es">Un quiz musical que rastrea la cadena de influencia, desde la estantería de discos hasta las raíces.</span>
+            </p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>
+            <span class="lang-ja">メニュー</span>
+            <span class="lang-en">Explore</span>
+            <span class="lang-zh-Hans">菜单</span>
+            <span class="lang-zh-Hant">選單</span>
+            <span class="lang-ko">메뉴</span>
+            <span class="lang-es">Menú</span>
+          </h4>
+          <a href="index.html#about">
+            <span class="lang-ja">アプリについて</span>
+            <span class="lang-en">About</span>
+            <span class="lang-zh-Hans">关于应用</span>
+            <span class="lang-zh-Hant">關於應用</span>
+            <span class="lang-ko">앱 소개</span>
+            <span class="lang-es">Acerca de</span>
+          </a>
+          <a href="index.html#modes">
+            <span class="lang-ja">モード</span>
+            <span class="lang-en">Modes</span>
+            <span class="lang-zh-Hans">模式</span>
+            <span class="lang-zh-Hant">模式</span>
+            <span class="lang-ko">모드</span>
+            <span class="lang-es">Modos</span>
+          </a>
+          <a href="index.html#how">
+            <span class="lang-ja">遊び方</span>
+            <span class="lang-en">How it works</span>
+            <span class="lang-zh-Hans">玩法</span>
+            <span class="lang-zh-Hant">玩法</span>
+            <span class="lang-ko">플레이 방법</span>
+            <span class="lang-es">Cómo jugar</span>
+          </a>
+          <a href="index.html#faq">
+            <span class="lang-ja">FAQ</span>
+            <span class="lang-en">FAQ</span>
+            <span class="lang-zh-Hans">FAQ</span>
+            <span class="lang-zh-Hant">FAQ</span>
+            <span class="lang-ko">FAQ</span>
+            <span class="lang-es">FAQ</span>
+          </a>
+          <a href="https://apps.apple.com/jp/app/%E9%9F%B3%E6%A5%BD%E3%81%AE%E3%83%AB%E3%83%BC%E3%83%84%E3%82%92%E3%83%87%E3%82%A3%E3%82%B0%E3%82%8B-roots/id6773954689" target="_blank" rel="noopener">
+            <span class="lang-ja">App Store</span>
+            <span class="lang-en">App Store</span>
+            <span class="lang-zh-Hans">App Store</span>
+            <span class="lang-zh-Hant">App Store</span>
+            <span class="lang-ko">App Store</span>
+            <span class="lang-es">App Store</span>
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>
+            <span class="lang-ja">サポート・規約</span>
+            <span class="lang-en">Support &amp; Legal</span>
+            <span class="lang-zh-Hans">支持与条款</span>
+            <span class="lang-zh-Hant">支援與條款</span>
+            <span class="lang-ko">지원 및 약관</span>
+            <span class="lang-es">Soporte y legal</span>
+          </h4>
+          <a href="https://forms.gle/2GQbnnwkBEz3miRp9" target="_blank" rel="noopener">
+            <span class="lang-ja">お問い合わせ</span>
+            <span class="lang-en">Contact</span>
+            <span class="lang-zh-Hans">联系我们</span>
+            <span class="lang-zh-Hant">聯絡我們</span>
+            <span class="lang-ko">문의</span>
+            <span class="lang-es">Contacto</span>
+          </a>
+          <a href="terms.html">
+            <span class="lang-ja">利用規約</span>
+            <span class="lang-en">Terms of Service</span>
+            <span class="lang-zh-Hans">使用条款</span>
+            <span class="lang-zh-Hant">使用條款</span>
+            <span class="lang-ko">이용약관</span>
+            <span class="lang-es">Términos de servicio</span>
+          </a>
+          <a href="privacy.html">
+            <span class="lang-ja">プライバシーポリシー</span>
+            <span class="lang-en">Privacy Policy</span>
+            <span class="lang-zh-Hans">隐私政策</span>
+            <span class="lang-zh-Hant">隱私權政策</span>
+            <span class="lang-ko">개인정보처리방침</span>
+            <span class="lang-es">Política de privacidad</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
         <span>© 2026 Music Influence Chain</span>
         <span>
-          <a href="terms.html" style="color:var(--text-dim);text-decoration:none;"><span class="lang-ja">利用規約</span><span class="lang-en">Terms</span></a>
-          &nbsp;·&nbsp;
-          <a href="privacy.html" style="color:var(--text-dim);text-decoration:none;"><span class="lang-ja">プライバシーポリシー</span><span class="lang-en">Privacy</span></a>
+          <span class="lang-ja">画像・データは Wikipedia / Wikimedia Commons より取得</span>
+          <span class="lang-en">Images &amp; data sourced from Wikipedia / Wikimedia Commons</span>
+          <span class="lang-zh-Hans">图片和数据来自 Wikipedia / Wikimedia Commons</span>
+          <span class="lang-zh-Hant">圖片和資料來自 Wikipedia / Wikimedia Commons</span>
+          <span class="lang-ko">이미지 및 데이터는 Wikipedia / Wikimedia Commons에서 가져옴</span>
+          <span class="lang-es">Imágenes y datos de Wikipedia / Wikimedia Commons</span>
         </span>
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/i18n.js?v=2"></script>
+  <script src="assets/js/i18n.js?v=3"></script>
 </body>
 </html>
